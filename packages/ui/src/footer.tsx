@@ -1,6 +1,11 @@
-export function Footer(): JSX.Element {
+
+interface FooterProps {
+    className?: string;
+}
+
+export const  Footer = ({className}: FooterProps) => {
     return (
-        <footer className="flex h-24 w-full items-center justify-center border-t">
+        <footer className={className} >
                 This is a footer
         </footer>
     );
