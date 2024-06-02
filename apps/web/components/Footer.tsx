@@ -50,7 +50,7 @@ const Footer = () => {
               <li className="mb-1"><a href="#" className="hover:underline">Study Center</a></li>
               <li className="mb-1"><a href="#" className="hover:underline">Fee Payment</a></li>
               <li className="mb-1"><a href="#" className="hover:underline">MOST</a></li>
-              <li className="mb-1"><a href="#" className="hover:underline">Motion Blog</a></li>
+              <li className="mb-1"><a href="#" className="hover:underline">Omega Blog</a></li>
               <li className="mb-1"><a href="#" className="hover:underline">I-MMP</a></li>
               <li className="mb-1"><a href="#" className="hover:underline">Amrit Course</a></li>
               <li className="mb-1"><a href="#" className="hover:underline">Coaching Guidelines</a></li>
