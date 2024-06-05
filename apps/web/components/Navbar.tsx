@@ -42,7 +42,7 @@ const NavBar = () => {
   }, [activeDropdown]);
 
   return (
-    <div className="w-full text-white bg-red-700 dark:text-gray-200 dark:bg-gray-800">
+    <div className="w-full text-white bg-red-700 dark:text-gray-200 dark:bg-gray-800 z-500">
       <div className="flex flex-col max-w-screen-xl px-4 mx-auto md:items-center md:justify-between md:flex-row md:px-6 lg:px-8">
         <div className="p-4 flex flex-row items-center justify-between">
           <a
@@ -103,7 +103,7 @@ const NavBar = () => {
                   {['Why omega?', 'Desk of MD', 'Infrastructure', 'Our facilities'].map((subItem, index) => (
                     <a
                       key={index}
-                      className="block px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark:bg-transparent dark:hover:bg-gray-600 dark:focus:bg-gray-600 dark:focus:text-white dark:hover:text-white dark:text-gray-200 md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+                      className=" text-black block px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark:bg-transparent dark:hover:bg-gray-600 dark:focus:bg-gray-600 dark:focus:text-black dark:hover:text-black dark:text-black md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
                       href="#"
                     >
                       {subItem}
@@ -136,9 +136,9 @@ const NavBar = () => {
                 <div className="px-2 py-2 bg-white rounded-md shadow dark:bg-gray-800">
                   {['Pre-engineering', 'Pre-medical', 'Pre-board'].map((subItem, index) => (
                     <a
-                      key={index}
-                      className="block px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark:bg-transparent dark:hover:bg-gray-600 dark:focus:bg-gray-600 dark:focus:text-white dark:hover:text-white dark:text-gray-200 md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
-                      href="#"
+                    key={index}
+                    className=" text-black block px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark:bg-transparent dark:hover:bg-gray-600 dark:focus:bg-gray-600 dark:focus:text-black dark:hover:text-black dark:text-black md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+                    href="#"
                     >
                       {subItem}
                     </a>
@@ -170,9 +170,9 @@ const NavBar = () => {
                 <div className="px-2 py-2 bg-white rounded-md shadow dark:bg-gray-800">
                   {['Syllabus', 'Exam alert'].map((subItem, index) => (
                     <a
-                      key={index}
-                      className="block px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark:bg-transparent dark:hover:bg-gray-600 dark:focus:bg-gray-600 dark:focus:text-white dark:hover:text-white dark:text-gray-200 md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
-                      href="#"
+                    key={index}
+                    className=" text-black block px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark:bg-transparent dark:hover:bg-gray-600 dark:focus:bg-gray-600 dark:focus:text-black dark:hover:text-black dark:text-black md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+                    href="#"
                     >
                       {subItem}
                     </a>
@@ -204,9 +204,9 @@ const NavBar = () => {
                 <div className="px-2 py-2 bg-white rounded-md shadow dark:bg-gray-800">
                   {['Periodic test', 'Online test', 'Residential coaching', 'Gallery', 'Enquiry for admission', 'Competitive exams'].map((subItem, index) => (
                     <a
-                      key={index}
-                      className="block px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark:bg-transparent dark:hover:bg-gray-600 dark:focus:bg-gray-600 dark:focus:text-white dark:hover:text-white dark:text-gray-200 md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
-                      href="#"
+                    key={index}
+                    className=" text-black block px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark:bg-transparent dark:hover:bg-gray-600 dark:focus:bg-gray-600 dark:focus:text-black dark:hover:text-black dark:text-black md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+                    href="#"
                     >
                       {subItem}
                     </a>

@@ -30,7 +30,9 @@ const responsive = {
 
 const Hero = () => {
     return (
-        <Carousel 
+
+        <div className="z-1">
+             <Carousel 
             additionalTransfrom={0}
             arrows={true}
             autoPlay={true}
@@ -55,6 +57,7 @@ const Hero = () => {
                 </div>
             </div>
         </Carousel>
+        </div>
     )
 }
 
