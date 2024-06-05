@@ -1,7 +1,6 @@
 import "./globals.css";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
-import Hero from "../components/Hero";
 import Footer from "../components/Footer";
 
 import "slick-carousel/slick/slick.css";
@@ -23,7 +22,6 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}>
         <NavBar/>
-        <Hero  />
         {/* <div className="text-red-500"> this is a div</div>   */}
         {children}
         <Footer />

@@ -1,9 +1,10 @@
 import {Card } from "@repo/ui/card";
-
+import Hero from "../components/Hero";
 export default function Page(): JSX.Element {
   return (
     <>
       <main >
+        <Hero  />
         <div className="max-w-7xl mx-auto px-4 py-6 sm:px-6 lg:px-8">
           <div className="flex justify-center items-center py-6">
             <h1 className="text-3xl font-bold"> Our Courses</h1>

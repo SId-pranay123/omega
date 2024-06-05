@@ -98,8 +98,8 @@ const NavBar = () => {
               </svg>
             </button>
             {activeDropdown === 'Experience omega' && (
-              <div className="mt-2 origin-top-right rounded-md shadow-lg md:absolute md:right-0 md:w-48">
-                <div className="px-2 py-2 bg-white rounded-md shadow dark:bg-gray-800">
+              <div className="mt-2 origin-top-right rounded-md shadow-lg md:absolute md:right-0 md:w-48 z-10">
+                <div className="px-2 py-2 bg-white rounded-md shadow dark:bg-white-800">
                   {['Why omega?', 'Desk of MD', 'Infrastructure', 'Our facilities'].map((subItem, index) => (
                     <a
                       key={index}
@@ -132,8 +132,8 @@ const NavBar = () => {
               </svg>
             </button>
             {activeDropdown === 'Classroom' && (
-              <div className="mt-2 origin-top-right rounded-md shadow-lg md:absolute md:right-0 md:w-48">
-                <div className="px-2 py-2 bg-white rounded-md shadow dark:bg-gray-800">
+              <div className="mt-2 origin-top-right rounded-md shadow-lg md:absolute md:right-0 md:w-48 z-10">
+                <div className="px-2 py-2 bg-white rounded-md shadow dark:bg-white-800">
                   {['Pre-engineering', 'Pre-medical', 'Pre-board'].map((subItem, index) => (
                     <a
                     key={index}
@@ -166,8 +166,8 @@ const NavBar = () => {
               </svg>
             </button>
             {activeDropdown === 'Academics' && (
-              <div className="mt-2 origin-top-right rounded-md shadow-lg md:absolute md:right-0 md:w-48">
-                <div className="px-2 py-2 bg-white rounded-md shadow dark:bg-gray-800">
+              <div className="mt-2 origin-top-right rounded-md shadow-lg md:absolute md:right-0 md:w-48 z-10">
+                <div className="px-2 py-2 bg-white rounded-md shadow dark:bg-white-800">
                   {['Syllabus', 'Exam alert'].map((subItem, index) => (
                     <a
                     key={index}
@@ -200,8 +200,8 @@ const NavBar = () => {
               </svg>
             </button>
             {activeDropdown === 'Student zone' && (
-              <div className="mt-2 origin-top-right rounded-md shadow-lg md:absolute md:right-0 md:w-48">
-                <div className="px-2 py-2 bg-white rounded-md shadow dark:bg-gray-800">
+              <div className="mt-2 origin-top-right rounded-md shadow-lg md:absolute md:right-0 md:w-48 z-10">
+                <div className="px-2 py-2 bg-white rounded-md shadow dark:bg-white-800 ">
                   {['Periodic test', 'Online test', 'Residential coaching', 'Gallery', 'Enquiry for admission', 'Competitive exams'].map((subItem, index) => (
                     <a
                     key={index}
