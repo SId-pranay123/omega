@@ -33,18 +33,17 @@ const Hero = () => {
 
         <div className="z-1">
              <Carousel 
-            additionalTransfrom={0}
-            arrows={true}
-            autoPlay={true}
-            autoPlaySpeed={10000}
-            centerMode={false}
-            infinite
-            responsive={responsive}
-            itemClass='item'
-            showDots={true}
+                additionalTransfrom={0}
+                arrows={true}
+                autoPlay={true}
+                autoPlaySpeed={10000}
+                centerMode={false}
+                infinite
+                responsive={responsive}
+                itemClass='item'
             >
-            <div className='w-[100vw] h-[88vh] flex items-center justify-around bg-orange-300 md:clip_path'>
-                <div>
+            <div className='w-[100vw] h-[88vh] lg:flex md:flex items-center justify-around bg-orange-300 md:clip_path'>
+                <div className='p-10 flex justify-center items-center'>
                     <h1>Some title here</h1>
                 </div>
                 <div className=" grid grid-rows-1 justify-center items-center gap-[2rem] my-auto">
