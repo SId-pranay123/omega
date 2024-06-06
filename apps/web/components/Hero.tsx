@@ -31,8 +31,7 @@ const responsive = {
 const Hero = () => {
     return (
 
-        <div className="z-1">
-             <Carousel 
+        <Carousel 
                 additionalTransfrom={0}
                 arrows={true}
                 autoPlay={true}
@@ -46,7 +45,7 @@ const Hero = () => {
                 <div className='p-10 flex justify-center items-center'>
                     <h1>Some title here</h1>
                 </div>
-                <div className=" grid grid-rows-1 justify-center items-center gap-[2rem] my-auto">
+                <div className="grid grid-rows-1 justify-center items-center gap-[2rem] my-auto">
                     <Image 
                         src="/omega.png"
                         alt="omega "
@@ -56,7 +55,6 @@ const Hero = () => {
                 </div>
             </div>
         </Carousel>
-        </div>
     )
 }
 
