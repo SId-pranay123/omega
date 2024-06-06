@@ -49,7 +49,7 @@ const NavBar = () => {
             href="#"
             className="text-lg font-semibold tracking-widest text-gray-900 uppercase rounded-lg dark:text-white focus:outline-none focus:shadow-outline"
           >
-            <img src="./favicon.ico" alt="Logo" className="h-8" />
+            <img src="./omega.png" alt="Logo" className="h-8" />
           </a>
           <button
             className="md:hidden rounded-lg focus:outline-none focus:shadow-outline"
@@ -228,3 +228,7 @@ const NavBar = () => {
 };
 
 export default NavBar;
+
+
+
+
