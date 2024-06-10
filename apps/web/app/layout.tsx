@@ -6,9 +6,11 @@ import Footer from "../components/Footer";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import NavBar from "../components/Navbar";
-import Achievements from "../components/Achievement";
 import Founders from "../components/Founders";
 import Stats from "../components/Stats";
+import Achievements from "../components/Acievements";
+import Founders1 from "../components/Founders1";
+// import TestimonialSlider from "../components/TestimonialSlider";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -27,9 +29,10 @@ export default function RootLayout({
         <NavBar/>
         {/* <div className="text-red-500"> this is a div</div>   */}
         {children}
-        <Achievements/>
-        <Founders/>
+       <Achievements/>
+        <Founders1/>
         <Stats/>
+        {/* <TestimonialSlider/> */}
         <Footer />
       </body>
     </html>

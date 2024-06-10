@@ -22,6 +22,8 @@
     "packages/*"
   ],
   "dependencies": {
-    "@fortawesome/fontawesome-free": "^6.5.2"
+    "@fortawesome/fontawesome-free": "^6.5.2",
+    "react-slick": "^0.30.2",
+    "slick-carousel": "^1.8.1"
   }
 }
