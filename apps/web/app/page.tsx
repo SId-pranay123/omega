@@ -17,8 +17,8 @@ export default function Page(): JSX.Element {
             <h1 className="text-3xl font-bold"> Courses</h1>
           </div>
           <div className="grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 gap-6">
-            <Card image="/omega.png" title="IIT JEE" details="Best coaching in North Bihar" href="#"/>
-            <Card image="/omega.png" title="NEET" details="Best coaching in North Bihar" href="#"/>
+            <Card image="/abhishek.jpeg" title="IIT JEE" details="Best coaching in North Bihar" href="#"/>
+            <Card image="/neet.jpg" title="NEET" details="Best coaching in North Bihar" href="#"/>
             <Card image="/omega.png" title="FOUNDATION" details="Best coaching in North Bihar" href="#"/>
             <Card image="/omega.png" title="Class 6-10" details="Best coaching in North Bihar" href="#"/>
           </div>

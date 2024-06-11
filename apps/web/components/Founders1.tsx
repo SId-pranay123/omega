@@ -24,7 +24,7 @@ const App: React.FC = () => {
 
   return (
     <div className="App">
-      <Carousel
+      <Carousel 
         slides={foundersData.map((founder, index) => (
           <Founders
             key={index}
