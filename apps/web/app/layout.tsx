@@ -29,10 +29,6 @@ export default function RootLayout({
         <NavBar/>
         {/* <div className="text-red-500"> this is a div</div>   */}
         {children}
-       <Achievements/>
-        <Founders1/>
-        <Stats/>
-        {/* <TestimonialSlider/> */}
         <Footer />
       </body>
     </html>

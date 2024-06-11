@@ -2,7 +2,7 @@ import {Card } from "@repo/ui/card";
 import Hero from "../components/Hero";
 import Stats from "../components/Stats";
 import Achievements from "../components/Acievements";
-import Founders from "../components/Founders";
+import Founders1 from "../components/Founders1";
 export default function Page(): JSX.Element {
  
   return (
@@ -24,8 +24,8 @@ export default function Page(): JSX.Element {
           </div>
         </div>
 
-        {/* <Achievements />
-        <Stats /> */}
+        <Achievements />
+        <Stats />
 
         {/* // -----------------------------Top Rankers-------------------------------- */}
         <div className="max-w-7xl mx-auto px-4 py-6 sm:px-6 lg:px-8">
@@ -54,7 +54,7 @@ export default function Page(): JSX.Element {
         </div>
 
 
-        {/* <Founders/> */}
+        <Founders1/>
       </main>
     </>
   );
