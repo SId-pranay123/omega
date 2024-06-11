@@ -1,5 +1,7 @@
 'use client'
 import React from 'react';
+import { useInView } from 'react-intersection-observer';
+import 'animate.css';
 
 interface AchievementProps {
   title: string;
@@ -8,22 +10,31 @@ interface AchievementProps {
   intake: number;
 }
 
-const AchievementCard: React.FC<AchievementProps> = ({ title, qualified, enrolled, intake }) => (
-  <div className="bg-purple-100 p-4 rounded-lg shadow-md text-center">
-    <button
-      className="bg-purple-500 text-white py-2 rounded text-lg font-semibold w-full"
-      onClick={() => alert(`You clicked on ${title}`)}
-    >
-      {title}
-    </button>
-    <div className="mt-4 text-lg">
-      <p className="font-semibold">{qualified} Students Qualified</p>
-      <p>{enrolled} Students Enrolled</p>
-      <p>{intake} Class Intake</p>
-    </div>
-  </div>
-);
+const AchievementCard: React.FC<AchievementProps> = ({ title, qualified, enrolled, intake }) => {
+  const { ref, inView } = useInView({
+    threshold: 0.1, // Trigger when 10% of the component is in view
+  });
 
+  return (
+    <div
+      ref={ref}
+      className={`bg-purple-100 p-4 rounded-lg shadow-md text-center 
+      ${inView ? 'animate__animated animate__fadeInUp' : 'opacity-0'}`}
+    >
+      <button
+        className="bg-purple-500 text-white py-2 rounded text-lg font-semibold w-full"
+        onClick={() => alert(`You clicked on ${title}`)}
+      >
+        {title}
+      </button>
+      <div className="mt-4 text-lg">
+        <p className="font-semibold">{qualified} Students Qualified</p>
+        <p>{enrolled} Students Enrolled</p>
+        <p>{intake} Class Intake</p>
+      </div>
+    </div>
+  );
+};
 
 const Achievements: React.FC = () => (
   <div className="bg-gray-100 py-10">
