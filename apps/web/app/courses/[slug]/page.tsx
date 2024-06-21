@@ -2,6 +2,7 @@ import CourseDescription from "../../../components/CourseDescription";
 import CourseFee from "../../../components/CourseFee";
 import Frontview from "../../../components/FrontView";
 import ResultDisplay from "../../../components/ResultDisplay";
+import ScrollableOptions from "../../../components/ScrollableOptions";
 import TestCarousel from "../../../components/TestCarousel";
 
 
@@ -13,29 +14,24 @@ export default function Page({ params }: { params: { slug: string } }) {
         <Frontview />
     <div className="m-14">
 
-        {params.slug === "neet" && 
             <div className="bg-[#FEFAF3] px-12 py-8 rounded-3xl">
+                <ScrollableOptions/>
+                <section id="section1">
                 <CourseDescription title={(params.slug).toUpperCase()} description="MOTION has long been distinguished for providing the Best Classroom Coaching, Online Learning Facility and getting excellent results. The curriculum is specifically designed for the NEET 2026 aspirants along with their 11th & Board preparations. To strengthen the foundation, conceptual knowledge and enhance the academic skills this course is the best option. The course helps the aspirants with better understanding of the examination pattern and ensure their success in the NEET with ease through a year-long curriculum."
                     highlights={neetHighlights} />
-                
-                <ResultDisplay title="NEET"/>    
+                   </section>
+                   <section id="section2">
+                             <ResultDisplay title="NEET"/>  
+                    </section>
 
-                <CourseFee />
-                <TestCarousel />
+                    <section id="section3" >
+                           <CourseFee />
+                    </section>
+                    <section id="section4" >
+                              <TestCarousel />
+                      </section>
             </div>
-        
-        }
 
-        {params.slug === "iit-jee" && 
-
-            <div className="bg-[#FEFAF3] px-12 py-8 rounded-3xl">
-                <CourseDescription title="JEE(Main + Advanced)" description="MOTION has long been distinguished for providing the Best Classroom Coaching, Online Learning Facility and getting excellent results. The curriculum is specifically designed for the NEET 2026 aspirants along with their 11th & Board preparations. To strengthen the foundation, conceptual knowledge and enhance the academic skills this course is the best option. The course helps the aspirants with better understanding of the examination pattern and ensure their success in the NEET with ease through a year-long curriculum."
-                    highlights={neetHighlights} />
-                <ResultDisplay title="IIT-JEE"/>    
-                <CourseFee />
-                <TestCarousel />
-            </div>    
-            }
     </div>
     </>
     )

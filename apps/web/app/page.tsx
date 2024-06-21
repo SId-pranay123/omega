@@ -6,6 +6,8 @@ import Stats from "../components/Stats";
 import Achievements from "../components/Acievements";
 import Founders1 from "../components/Founders1";
 import { useRouter } from "next/navigation";
+import ScrollableOptions from "../components/ScrollableOptions";
+
 export default function Page(): JSX.Element {
 
   const router = useRouter();
@@ -94,8 +96,9 @@ export default function Page(): JSX.Element {
             <Card image="/omega.png" title="Another name" subtitle="English" details="English ranker" href="#"/>
           </div>
         </div> */}
-
-
+        
+        {/* <ScrollableOptions/> */}
+        {/* <PageWithSections/> */}
         <Founders1/>
       </main>
     </>

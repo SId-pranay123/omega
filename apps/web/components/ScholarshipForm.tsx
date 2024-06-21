@@ -55,8 +55,15 @@ const ScholarshipForm: React.FC = () => {
 
   const handleSubmit = (e: FormEvent) => {
     e.preventDefault();
-    // handle form submission
     console.log(formData);
+    // Reset form fields
+    setFormData({
+      name: '',
+      stream: '',
+      currentClass: '',
+      mobileNumber: '',
+      email: ''
+    });
   };
 
   return (
