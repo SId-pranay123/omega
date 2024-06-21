@@ -1,96 +1,57 @@
 import React from 'react';
-
-const Footer = () => {
+const Footer: React.FC = () => {
   return (
-    <footer className="bg-[#F8BC4D] text-black pt-10 ">
-      <div className="container mx-auto px-4">
-        <div className="flex flex-wrap justify-between">
-          {/* About Us */}
-          <div className="w-full sm:w-1/2 md:w-1/4 mb-4">
-            <h3 className="font-bold mb-2">About Us</h3>
-            <ul>
-              <li className="mb-1"><a href="#" className="hover:underline">Why Omega</a></li>
-              <li className="mb-1"><a href="#" className="hover:underline">About Omega Study Center</a></li>
-              <li className="mb-1"><a href="#" className="hover:underline">JEE/NEET E-Brochure</a></li>
-              <li className="mb-1"><a href="#" className="hover:underline">Foundation E-Brochure</a></li>
-              <li className="mb-1"><a href="#" className="hover:underline">Omega Plus Magazine</a></li>
-              <li className="mb-1"><a href="#" className="hover:underline">Omega Arjun Program</a></li>
-            </ul>
+    <footer className="bg-[#FDA172] py-8">
+      <div className="container mx-auto px-4 flex flex-col md:flex-row justify-between items-center">
+        <div className="flex items-center mb-4 md:mb-0">
+          <div className="bg-blue-500 text-white rounded-full w-10 h-10 flex items-center justify-center">
+            {/* Replace with your logo/icon */}
+            <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5.121 18.364A9 9 0 1118.364 5.121 9 9 0 015.121 18.364z"></path>
+            </svg>
           </div>
-          {/* About Exam */}
-          <div className="w-full sm:w-1/2 md:w-1/4 mb-4">
-            <h3 className="font-bold mb-2">About Exam</h3>
-            <ul>
-              <li className="mb-1"><a href="#" className="hover:underline">JEE Main</a></li>
-              <li className="mb-1"><a href="#" className="hover:underline">JEE Advanced</a></li>
-              <li className="mb-1"><a href="#" className="hover:underline">NEET</a></li>
-              <li className="mb-1"><a href="#" className="hover:underline">NTSE</a></li>
-              <li className="mb-1"><a href="#" className="hover:underline">Answer Key & Solutions</a></li>
-              <li className="mb-1"><a href="#" className="hover:underline">Registration Form</a></li>
-              <li className="mb-1"><a href="#" className="hover:underline">Admission Open</a></li>
-            </ul>
-          </div>
-          {/* Contact Us */}
-          <div className="w-full sm:w-1/2 md:w-1/4 mb-4">
-            <h3 className="font-bold mb-2">Contact Us</h3>
-            <ul>
-              <li className="mb-1"><a href="#" className="hover:underline">Contact Us</a></li>
-              <li className="mb-1"><a href="#" className="hover:underline">Enquiry</a></li>
-              <li className="mb-1"><a href="#" className="hover:underline">Be A Partner</a></li>
-              <li className="mb-1"><a href="#" className="hover:underline">Associate Consultant</a></li>
-              <li className="mb-1"><a href="#" className="hover:underline">Feedback & Grievance</a></li>
-              <li className="mb-1"><a href="#" className="hover:underline">Careers</a></li>
-              <li className="mb-1"><a href="#" className="hover:underline">Student Parent Login</a></li>
-            </ul>
-          </div>
-          {/* Useful Links */}
-          <div className="w-full sm:w-1/2 md:w-1/4 mb-4">
-            <h3 className="font-bold mb-2">Useful Links</h3>
-            <ul>
-              <li className="mb-1"><a href="#" className="hover:underline">Study Center</a></li>
-              <li className="mb-1"><a href="#" className="hover:underline">Fee Payment</a></li>
-              <li className="mb-1"><a href="#" className="hover:underline">MOST</a></li>
-              <li className="mb-1"><a href="#" className="hover:underline">Omega Blog</a></li>
-              <li className="mb-1"><a href="#" className="hover:underline">I-MMP</a></li>
-              <li className="mb-1"><a href="#" className="hover:underline">Amrit Course</a></li>
-              <li className="mb-1"><a href="#" className="hover:underline">Coaching Guidelines</a></li>
-            </ul>
-          </div>
+          <span className="ml-3 text-xl font-bold">Brand name</span>
         </div>
-        {/* Corporate Office */}
-        <div className="flex flex-wrap justify-between items-center border-t border-gray-700 pt-4 mt-4">
-          <div className="w-full md:w-1/2 mb-4 md:mb-0">
-            <p className="mb-2">
-              <strong>Corporate Office</strong>
-            </p>
-            <p className="mb-2">📍 Mirzapur chowk, Near bandhan store, 846004</p>
-            <p className="mb-2">📞 18002121799</p>
-            <p className="mb-2">📧 Info@motion.ac.in</p>
+        <div className="flex flex-col md:flex-row justify-between w-full md:w-auto">
+          <div className="mb-4 md:mb-0 md:mr-8">
+            <h3 className="font-semibold mb-2">PRODUCT</h3>
+            <ul>
+              <li><a href="#" className="hover:underline">Features</a></li>
+              <li><a href="#" className="hover:underline">Integrations</a></li>
+              <li><a href="#" className="hover:underline">Pricing</a></li>
+              <li><a href="#" className="hover:underline">FAQ</a></li>
+            </ul>
           </div>
-          {/* Social Links */}
-          <div className="w-full md:w-1/2 text-right">
-            <p className="mb-2">FOLLOW US ON</p>
-            <div className="flex justify-end space-x-4">
-              <a href="#" className="hover:underline">F</a>
-              <a href="#" className="hover:underline">I</a>
-              <a href="#" className="hover:underline">Y</a>
-            </div>
+          <div className="mb-4 md:mb-0 md:mr-8">
+            <h3 className="font-semibold mb-2">COMPANY</h3>
+            <ul>
+              <li><a href="#" className="hover:underline">Privacy</a></li>
+              <li><a href="#" className="hover:underline">Terms of Service</a></li>
+            </ul>
           </div>
-        </div>
-        {/* Footer Bottom */}
-        <div className="flex flex-wrap justify-between items-center border-t border-gray-700 pt-4 mt-4">
-          <div className="w-full md:w-1/2">
-            <p>© 2024 All right reserved by Motion Education</p>
+          <div className="mb-4 md:mb-0 md:mr-8">
+            <h3 className="font-semibold mb-2">DEVELOPERS</h3>
+            <ul>
+              <li><a href="#" className="hover:underline">Public API</a></li>
+              <li><a href="#" className="hover:underline">Documentation</a></li>
+              <li><a href="#" className="hover:underline">Guides</a></li>
+            </ul>
           </div>
-          <div className="w-full md:w-1/2 text-right">
-            <p>
-              <a href="#" className="hover:underline">Privacy Policy</a> | <a href="#" className="hover:underline">Terms & Conditions</a> | <a href="#" className="hover:underline">Refund Rules</a>
-            </p>
+          <div>
+            <h3 className="font-semibold mb-2">SOCIAL MEDIA</h3>
+            <ul className="flex space-x-4">
+              <li><a href="#" className="hover:underline"><i className="fab fa-facebook-f"></i></a></li>
+              <li><a href="#" className="hover:underline"><i className="fab fa-twitter"></i></a></li>
+              <li><a href="#" className="hover:underline"><i className="fab fa-instagram"></i></a></li>
+            </ul>
           </div>
         </div>
       </div>
+      <div className="border-t border-gray-300 mt-8 pt-4 text-center">
+        <p>&copy; 1968 Company Co. All rights reserved.</p>
+      </div>
     </footer>
-  );
-};
+  )
+}
 
-export default Footer;
+export default Footer
