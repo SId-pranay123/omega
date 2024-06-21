@@ -1,11 +1,17 @@
 // import {Card } from "@repo/ui/card";
+"use client";
 import Card from "../components/Card";
 import Hero from "../components/Hero";
 import Stats from "../components/Stats";
 import Achievements from "../components/Acievements";
 import Founders1 from "../components/Founders1";
+import { useRouter } from "next/navigation";
 export default function Page(): JSX.Element {
- 
+
+  const router = useRouter();
+
+
+
   return (
     <>
       <main >
@@ -25,11 +31,11 @@ export default function Page(): JSX.Element {
 
             <Card imageSrc="/abhishek.jpeg" title="IIT-JEE" description="We offer the best online coaching for IIT-JEE exam preparation, making it an ideal choice for aspirants." 
                       buttonText="Know More"
-                    // onButtonClick={handleKnowMoreClick}
+                    onButtonClick={() => router.push("/courses/iit-jee")}
                   />
             <Card imageSrc="/neet.jpg" title="NEET" description="We offer the best online coaching for NEET exam preparation, making it an ideal choice for aspirants." 
                       buttonText="Know More"
-                    // onButtonClick={handleKnowMoreClick}
+                    onButtonClick={() => router.push("/courses/neet")}
                   />
             <Card imageSrc="/omega.png" title="Prenuture and Foundation" description="We offer the best online coaching for IIT-JEE exam preparation, making it an ideal choice for aspirants." 
                       buttonText="Know More"
