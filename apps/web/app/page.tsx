@@ -3,12 +3,16 @@ import Hero from "../components/Hero";
 import Stats from "../components/Stats";
 import Achievements from "../components/Acievements";
 import Founders1 from "../components/Founders1";
+import TestCarousel from "../components/TestCarousel";
+import Frontview from "../components/Frontview";
 export default function Page(): JSX.Element {
  
   return (
     <>
       <main >
+        <Frontview/>
         <Hero />
+        <TestCarousel/>
 
         {/* -----------------------------Courses-------------------------------- */}
 
@@ -52,8 +56,6 @@ export default function Page(): JSX.Element {
             <Card image="/omega.png" title="Another name" subtitle="English" details="English ranker" href="#"/>
           </div>
         </div>
-
-
         <Founders1/>
       </main>
     </>

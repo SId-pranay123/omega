@@ -10,6 +10,7 @@ import Founders from "../components/Founders";
 import Stats from "../components/Stats";
 import Achievements from "../components/Acievements";
 import Founders1 from "../components/Founders1";
+import TestCarousel from "../components/TestCarousel";
 // import TestimonialSlider from "../components/TestimonialSlider";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -29,6 +30,7 @@ export default function RootLayout({
         <NavBar/>
         {/* <div className="text-red-500"> this is a div</div>   */}
         {children}
+        {/* <TestCarousel/> */}
         <Footer />
       </body>
     </html>
