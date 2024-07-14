@@ -4,13 +4,14 @@ const Footer: React.FC = () => {
     <footer className="bg-[#FDA172] py-8">
       <div className="container mx-auto px-4 flex flex-col md:flex-row justify-between items-center">
         <div className="flex items-center mb-4 md:mb-0">
-          <div className="bg-blue-500 text-white rounded-full w-10 h-10 flex items-center justify-center">
+          <div className=" text-white rounded-full w-10 h-10 flex items-center justify-center">
             {/* Replace with your logo/icon */}
-            <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            {/* <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5.121 18.364A9 9 0 1118.364 5.121 9 9 0 015.121 18.364z"></path>
-            </svg>
+            </svg> */}
+            <img src="/omega.png" alt="Logo" />
           </div>
-          <span className="ml-3 text-xl font-bold">Brand name</span>
+          <span className="ml-3 text-xl font-bold">Omega</span>
         </div>
         <div className="flex flex-col md:flex-row justify-between w-full md:w-auto">
           <div className="mb-4 md:mb-0 md:mr-8">
@@ -40,9 +41,9 @@ const Footer: React.FC = () => {
           <div>
             <h3 className="font-semibold mb-2">SOCIAL MEDIA</h3>
             <ul className="flex space-x-4">
-              <li><a href="#" className="hover:underline"><i className="fab fa-facebook-f"></i></a></li>
+              <li><a href="https://www.facebook.com/omegastudycentredbg?mibextid=ZbWKwL" target='_blank' rel="noopener noreferrer" className="hover:underline"><i className="fab fa-facebook-f"></i></a></li>
               <li><a href="#" className="hover:underline"><i className="fab fa-twitter"></i></a></li>
-              <li><a href="#" className="hover:underline"><i className="fab fa-instagram"></i></a></li>
+              <li><a href="https://www.instagram.com/omega_darbhanga/" className="hover:underline"><i className="fab fa-instagram"></i></a></li>
             </ul>
           </div>
         </div>
