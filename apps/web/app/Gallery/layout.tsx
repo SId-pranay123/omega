@@ -1,4 +1,4 @@
-export default function CoursesLayout({
+export default function GalleryLayout({
     children, // will be a page or nested layout
   }: {
     children: React.ReactNode
