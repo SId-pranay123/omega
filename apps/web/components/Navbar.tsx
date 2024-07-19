@@ -44,7 +44,7 @@ const NavBar = () => {
   }, [activeDropdown]);
 
   return (
-    <div className="fixed top-0 w-full text-white bg-red-700 dark:text-gray-200 dark:bg-gray-800 z-50">
+    <div className="fixed top-0 w-full text-white  dark:text-gray-200 bg-gray-800 z-50">
       <div className="flex flex-col max-w-screen-xl px-4 mx-auto md:items-center md:justify-between md:flex-row md:px-6 lg:px-8">
         <div className="p-4 flex flex-row items-center justify-between">
           <a
