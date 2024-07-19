@@ -76,7 +76,7 @@ const ScholarshipForm: React.FC = () => {
         <h3 className="text-xl md:text-3xl lg:text-4xl font-bold text-red-600 mb-4">(OTSE)</h3>
         <div className="bg-gradient-to-r from-orange-400 to-red-600 text-white font-bold py-4 rounded-md shadow-lg mb-4 inline-block px-4 md:px-8">
           <p className="text-lg md:text-xl lg:text-2xl mb-2">Avail up to <span className="underline text-2xl md:text-3xl lg:text-4xl">100% Scholarship</span> on</p>
-          <p className="text-lg md:text-xl lg:text-2xl">JEE(Main+Advanced) & NEET Classroom Courses</p>
+          <p className="text-lg md:text-xl lg:text-2xl">Classroom Courses</p>
         </div>
         <p className="text-lg md:text-xl text-red-600 font-bold">Registration Fee = <span className="line-through">Rs.100</span> FREE</p>
       </div>
@@ -116,7 +116,7 @@ const ScholarshipForm: React.FC = () => {
               className="w-full px-3 py-2 border rounded-lg"
             />
           </div>
-          <div className="mb-4">
+          {/* <div className="mb-4">
             <label className="block text-gray-700">Stream</label>
             <select 
               name="stream" 
@@ -130,7 +130,7 @@ const ScholarshipForm: React.FC = () => {
               <option value="commerce">Commerce</option>
               <option value="arts">Arts</option>
             </select>
-          </div>
+          </div> */}
           <div className="mb-4">
             <label className="block text-gray-700">Current Class</label>
             <select 
@@ -141,9 +141,10 @@ const ScholarshipForm: React.FC = () => {
               className="w-full px-3 py-2 border rounded-lg"
             >
               <option value="">Select Class</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
               <option value="10">10</option>
-              <option value="11">11</option>
-              <option value="12">12</option>
             </select>
           </div>
           <button type="submit" className="w-full bg-red-500 text-white px-4 py-2 rounded-lg">Register Now</button>

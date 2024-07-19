@@ -42,15 +42,16 @@ const Hero = () => {
                 itemClass='item'
             >
             <div className='w-[100vw] h-[88vh] lg:flex md:flex items-center justify-around bg-orange-300 md:clip_path'>
-                <div className='p-10 flex justify-center items-center'>
+                {/* <div className='p-10 flex justify-center items-center'>
                     <h1>Some title here</h1>
-                </div>
+                </div> */}
                 <div className="grid grid-rows-1 justify-center items-center gap-[2rem] my-auto">
                     <Image 
-                        src="/omega.png"
-                        alt="omega "
-                        width={300}
-                        height={300}
+                        src="/Banner.jpg"
+                        alt="omega"
+                        width={1350}
+                        height={700}
+                        // className='py-4'
                     />
                 </div>
             </div>
