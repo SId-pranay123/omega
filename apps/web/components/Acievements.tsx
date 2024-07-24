@@ -29,9 +29,9 @@ const Achievements: React.FC = () => (
   <div className="bg-gray-100 py-10">
     <h1 className="text-3xl font-bold text-center mb-10">Achievements</h1>
     <div className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
-      <AchievementCard title="NEET" qualified={80} enrolled={100} intake={100} />
-      <AchievementCard title="JEE (Advanced)" qualified={75} enrolled={100} intake={100} />
-      <AchievementCard title="JEE (Main)" qualified={82} enrolled={100} intake={100} />
+      <AchievementCard title="NEET" qualified={900} enrolled={100} intake={100} />
+      <AchievementCard title="JEE (Advanced)" qualified={1000} enrolled={100} intake={100} />
+      <AchievementCard title="JEE (Main)" qualified={400} enrolled={100} intake={100} />
     </div>
   </div>
 );

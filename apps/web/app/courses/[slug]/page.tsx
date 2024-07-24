@@ -8,6 +8,12 @@ import TestCarousel from "../../../components/TestCarousel";
 
 export default function Page({ params }: { params: { slug: string } }) {
 
+    const descriptions: {[key: string]: string} = {
+        'iit-jee': 'Our JEE (Mains + Advance)  courses are designed to help students achieve excellent results and high ranks in the Joint Entrance Examination. We focus on building a strong foundation of concepts and knowledge, ensuring that each student gains a better understanding of the subjects. With our expert faculty and comprehensive study materials, we guide students through a structured learning path that enhances their problem-solving skills and prepares them for success in the JEE exams along with boards.',
+        'neet': ' Our NEET courses aim to provide students with the knowledge and skills necessary to excel in the National Eligibility cum Entrance Test. We emphasize a deep understanding of key concepts in biology, chemistry, and physics, helping students achieve outstanding results and top ranks. Our experienced instructors and well-organized curriculum ensure that students have a better understanding of the subjects, enabling them to confidently tackle the challenges of the NEET exam.',
+        // Add more slug-description mappings as needed
+    };
+
     const neetHighlights: string[] = ["Structured Academic Planner for NEET 2026.", "Printed Study Material & Daily Practice Sheets.", "One on One doubt solving support & Regular Test facility.", "Complete Syllabus Coverage of Class 11th."]
     return (
         <>
@@ -17,7 +23,7 @@ export default function Page({ params }: { params: { slug: string } }) {
             <div className="bg-[#FEFAF3] px-12 py-8 rounded-3xl">
                 <ScrollableOptions/>
                 <section id="section1" className="pt-12">
-                    <CourseDescription title={(params.slug).toUpperCase()} description="MOTION has long been distinguished for providing the Best Classroom Coaching, Online Learning Facility and getting excellent results. The curriculum is specifically designed for the NEET 2026 aspirants along with their 11th & Board preparations. To strengthen the foundation, conceptual knowledge and enhance the academic skills this course is the best option. The course helps the aspirants with better understanding of the examination pattern and ensure their success in the NEET with ease through a year-long curriculum."
+                    <CourseDescription title={(params.slug).toUpperCase()} description={`${descriptions[params.slug]}`}
                     highlights={neetHighlights} />
                 </section>
                 <section id="section2" className="pt-14">

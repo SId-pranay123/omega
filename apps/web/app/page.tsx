@@ -8,10 +8,15 @@ import Founders1 from "../components/Founders1";
 import { useRouter } from "next/navigation";
 import ScrollableOptions from "../components/ScrollableOptions";
 
+const trimString = (str : string) => {
+  return str.length > 80 ? str.slice(0, 80) + "..." : str
+}
+
 export default function Page(): JSX.Element {
 
   const router = useRouter();
-
+  const iitDescription = "Our JEE (Mains + Advance)  courses are designed to help students achieve excellent results and high ranks in the Joint Entrance Examination. We focus on building a strong foundation of concepts and knowledge, ensuring that each student gains a better understanding of the subjects. With our expert faculty and comprehensive study materials, we guide students through a structured learning path that enhances their problem-solving skills and prepares them for success in the JEE exams along with boards."
+  const neetDescription = "Our NEET courses aim to provide students with the knowledge and skills necessary to excel in the National Eligibility cum Entrance Test. We emphasize a deep understanding of key concepts in biology, chemistry, and physics, helping students achieve outstanding results and top ranks. Our experienced instructors and well-organized curriculum ensure that students have a better understanding of the subjects, enabling them to confidently tackle the challenges of the NEET exam."
 
 
   return (
@@ -31,11 +36,11 @@ export default function Page(): JSX.Element {
             <Card image="/omega.png" title="FOUNDATION" details="Best coaching in North Bihar" href="#"/>
             <Card image="/omega.png" title="Class 6-10" details="Best coaching in North Bihar" href="#"/> */}
 
-            <Card imageSrc="/abhishek.jpeg" title="IIT-JEE" description="We offer the best online coaching for IIT-JEE exam preparation, making it an ideal choice for aspirants." 
+            <Card imageSrc="/abhishek.jpeg" title="IIT-JEE" description={trimString(iitDescription)} 
                       buttonText="Know More"
                     onButtonClick={() => router.push("/courses/iit-jee")}
                   />
-            <Card imageSrc="/neet.jpg" title="NEET" description="We offer the best online coaching for NEET exam preparation, making it an ideal choice for aspirants." 
+            <Card imageSrc="/neet.jpg" title="NEET" description={trimString(neetDescription)}
                       buttonText="Know More"
                     onButtonClick={() => router.push("/courses/neet")}
                   />

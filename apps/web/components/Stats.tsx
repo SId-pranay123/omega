@@ -21,12 +21,12 @@ const Stats: React.FC = () => (
     <div className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
       <StatCard 
         icon={<i className="fas fa-award"></i>} 
-        value={15} 
+        value={10} 
         label="Years of Excellence" 
       />
       <StatCard 
         icon={<i className="fas fa-user-graduate"></i>} 
-        value="15000+" 
+        value="10000+" 
         label="Satisfied Students" 
       />
       <StatCard 
