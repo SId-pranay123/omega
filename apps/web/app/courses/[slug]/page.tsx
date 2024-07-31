@@ -14,7 +14,9 @@ export default function Page({ params }: { params: { slug: string } }) {
         // Add more slug-description mappings as needed
     };
 
-    const neetHighlights: string[] = ["Structured Academic Planner for NEET 2026.", "Printed Study Material & Daily Practice Sheets.", "One on One doubt solving support & Regular Test facility.", "Complete Syllabus Coverage of Class 11th."]
+    const currentYear = new Date().getFullYear();
+
+    const neetHighlights: string[] = [`Structured Academic Planner for ${(params.slug).toUpperCase()} ${currentYear}.`, "Printed Study Material & Daily Practice Sheets.", "One on One doubt solving support & Regular Test facility.", "Complete Syllabus Coverage."]
     return (
         <>
         <Frontview />
@@ -27,7 +29,7 @@ export default function Page({ params }: { params: { slug: string } }) {
                     highlights={neetHighlights} />
                 </section>
                 <section id="section2" className="pt-14">
-                    <ResultDisplay /*image="/omega.png"*/ title={`${(params.slug).toUpperCase()} `}/>  
+                    <ResultDisplay image="/result.jpeg" title={`${(params.slug).toUpperCase()} `}/>  
                 </section>
                 <section id="section3" >
                     <CourseFee />

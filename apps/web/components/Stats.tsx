@@ -26,7 +26,7 @@ const Stats: React.FC = () => (
       />
       <StatCard 
         icon={<i className="fas fa-user-graduate"></i>} 
-        value="10000+" 
+        value="12000+" 
         label="Satisfied Students" 
       />
       <StatCard 

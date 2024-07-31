@@ -7,9 +7,9 @@ interface ResultDisplayProps {
 
 const ResultDisplay: React.FC<ResultDisplayProps> = ({title, image}) => {
     return (
-        <div className="p-4">
+        <div className="p-4 ">
             <h1 className="text-3xl">{title} Result-2024</h1>
-            <Image src={image? image: ""} alt="result" width={300} height={300} />
+            <Image src={image? image: ""} alt="result" width={500} height={400} className="p-8"/>
             <button className="bg-orange-500 text-white px-4 py-2 rounded-md">Enroll</button>
         </div>
     )

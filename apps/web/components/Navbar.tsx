@@ -44,15 +44,15 @@ const NavBar = () => {
   }, [activeDropdown]);
 
   return (
-    <div className="fixed top-0 w-full text-white  dark:text-gray-200 bg-gray-800 z-50">
+    <div className="fixed top-0 w-full text-white  dark:text-gray-200 bg-[#560002] z-50">
       <div className="flex flex-col max-w-screen-xl px-4 mx-auto md:items-center md:justify-between md:flex-row md:px-6 lg:px-8">
-        <div className="p-4 flex flex-row items-center justify-between">
-          <a
+        <div className="p-4 flex min-h-[4rem] flex-row items-center justify-between">
+          {/* <a
             href="./"
             className="text-lg font-semibold tracking-widest text-gray-900 uppercase rounded-lg dark:text-white focus:outline-none focus:shadow-outline"
           >
             <img src="./omega.png" alt="Logo" className="h-8" />
-          </a>
+          </a> */}
           <button
             className="md:hidden rounded-lg focus:outline-none focus:shadow-outline"
             onClick={() => setMenuOpen(!menuOpen)}
@@ -76,7 +76,7 @@ const NavBar = () => {
         </div>
         <nav className={`flex-col flex-grow pb-4 md:pb-0 ${menuOpen ? 'flex' : 'hidden'} md:flex md:justify-end md:flex-row`}>
           <a
-            className="px-4 py-2 mt-2 text-sm font-semibold text-gray-900 bg-gray-200 rounded-lg dark:bg-gray-700 dark:hover:bg-gray-600 dark:focus:bg-gray-600 dark:focus:text-white dark:hover:text-white dark:text-gray-200 md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+            className="px-4 py-2 mt-2 text-sm font-semibold text-gray-900 bg-gray-200 rounded-lg dark:bg-gray-700 dark:hover:bg-gray-600 dark:focus:bg-gray-600 dark:focus:text-white dark:hover:text-white dark:text-gray-200 md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-[#F8BC4D] focus:bg-gray-200 focus:outline-none focus:shadow-outline"
             href="./"
           >
             Home
@@ -102,7 +102,7 @@ const NavBar = () => {
             {activeDropdown === 'Experience omega' && (
               <div className="pt-2 origin-top-right rounded-md shadow-lg md:absolute md:right-0 md:w-48 z-10">
                 <div className="px-2 py-2 bg-white rounded-md shadow dark:bg-white-800">
-                  {['Why omega?', 'Desk of MD', 'Infrastructure', 'Our facilities'].map((subItem, index) => (
+                  {['Why-omega?', 'Desk of MD', 'Infrastructure', 'Our facilities'].map((subItem, index) => (
                     <a
                       key={index}
                       className=" text-black block px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark:bg-transparent dark:hover:bg-gray-200 dark:focus:bg-gray-600 dark:focus:text-black dark:hover:text-black dark:text-black md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"

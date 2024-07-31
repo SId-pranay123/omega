@@ -21,7 +21,19 @@ const testimonials: Testimonial[] = [
     name: 'Manas Agrawal',
     image: '/manas.jpeg', // Replace with the path to the image
     rank: 'JEE Main & Advanced (AIR 34)',
-    quote: 'Genuinely, I would like to thank Omega for helping me crack JEE Advanced 2019. The guidance by all the teachers, the support of office staff and the study material, everything is just perfect to take you through JEE and other exams. Thank you Omega for making my career.',
+    quote: 'I owe my JEE success to Omega Study Centre. The regular tests, doubt-clearing sessions, and motivational support kept me focused and confident throughout my journey.',
+  },
+  {
+    name: 'Manas Agrawal',
+    image: '/manas.jpeg', // Replace with the path to the image
+    rank: 'JEE Main & Advanced (AIR 34)',
+    quote: "Omega Study Centre transformed my JEE preparation. The faculty's dedication and the structured curriculum helped me secure a top rank. Highly recommended for serious aspirants!",
+  },
+  {
+    name: 'Aniket Agrawal',
+    image: '/neet.jpg', // Replace with the path to the image
+    rank: 'JEE Main & Advanced (AIR 34)',
+    quote: 'Joining Omega Study Centre was the best decision for my JEE preparation. The experienced teachers and their unique teaching methods ensured I was well-prepared for every challenge.',
   },
   // Add more testimonials as needed
 ];

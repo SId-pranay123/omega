@@ -141,6 +141,7 @@ const ScholarshipForm: React.FC = () => {
               className="w-full px-3 py-2 border rounded-lg"
             >
               <option value="">Select Class</option>
+              <option value="7">6</option>
               <option value="7">7</option>
               <option value="8">8</option>
               <option value="9">9</option>

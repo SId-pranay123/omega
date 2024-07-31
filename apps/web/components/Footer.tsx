@@ -1,10 +1,10 @@
 import React from 'react';
 const Footer: React.FC = () => {
   return (
-    <footer className="bg-[#FDA172] py-8">
+    <footer className="bg-[#7a0d0fe5] py-8">
       <div className="container mx-auto px-4 flex flex-col md:flex-row justify-between items-center">
         <div className="flex items-center mb-4 md:mb-0">
-          <div className=" text-white rounded-full w-10 h-10 flex items-center justify-center">
+          <div className="text-white rounded-full w-10 h-10 flex items-center justify-center">
             {/* Replace with your logo/icon */}
             {/* <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5.121 18.364A9 9 0 1118.364 5.121 9 9 0 015.121 18.364z"></path>
@@ -13,7 +13,7 @@ const Footer: React.FC = () => {
           </div>
           <span className="ml-3 text-xl font-bold">Omega</span>
         </div>
-        <div className="flex flex-col md:flex-row justify-between w-full md:w-auto">
+        <div className="flex flex-col md:flex-row justify-between text-white w-full md:w-auto">
           <div className="mb-4 md:mb-0 md:mr-8">
             <h3 className="font-semibold mb-2">PRODUCT</h3>
             <ul>
@@ -48,7 +48,7 @@ const Footer: React.FC = () => {
           </div>
         </div>
       </div>
-      <div className="border-t border-gray-300 mt-8 pt-4 text-center">
+      <div className="border-t border-gray-300 mt-8 pt-4 text-center text-white">
         <p>&copy; 1968 Company Co. All rights reserved.</p>
       </div>
     </footer>

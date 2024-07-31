@@ -1,3 +1,5 @@
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faCheck } from '@fortawesome/free-solid-svg-icons';
 
 interface CourseDescriptionProps {
     title: string
@@ -16,7 +18,9 @@ const CourseDescription : React.FC<CourseDescriptionProps> = ({title, descriptio
                     {highlights.map((highlight, index) => ( 
                         <div key={index} className="bg-white flex text-lg mb-4 rounded-xl min-h-10">
                             <div className="p-4">
-                                Logo
+                                <span style={{ color: 'green', fontSize: '24px' }}>
+                                    <FontAwesomeIcon icon={faCheck} />
+                                </span>
                             </div>
                             <div className="p-4">
                                 {highlight}

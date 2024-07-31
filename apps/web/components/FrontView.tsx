@@ -103,6 +103,7 @@ const Frontview1: React.FC<FrontviewProps> = ({ jee, nurture, batch, classInfo }
                 <option value="" disabled>Select Course</option>
                 <option value="course1">JEE(MAIN + ADVANCED)</option>
                 <option value="course2">NEET</option>
+                <option value="course2">JEE Mains</option>
               </select>
               <div className="flex justify-center">
                 <button
