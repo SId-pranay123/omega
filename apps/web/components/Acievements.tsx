@@ -11,7 +11,7 @@ interface AchievementProps {
 const AchievementCard: React.FC<AchievementProps> = ({ title, qualified, enrolled, intake }) => (
   <div className="bg-purple-100 p-4 rounded-lg shadow-md text-center">
     <button
-      className="bg-purple-500 text-white py-2 rounded text-lg font-semibold w-full"
+      className="bg-[#560002] text-white py-2 rounded text-lg font-semibold w-full"
       onClick={() => alert(`You clicked on ${title}`)}
     >
       {title}

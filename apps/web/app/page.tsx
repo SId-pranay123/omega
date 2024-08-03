@@ -69,19 +69,19 @@ export default function Page(): JSX.Element {
             <Card image="/omega.png" title="Jane Doe" details="AIR 2 ranker" href="#"/>
             <Card image="/omega.png" title="SOme name" details="AIR 3 ranker" href="#"/>
             <Card image="/omega.png" title="Another name" details="AIR 4 ranker" href="#"/> */}
-            <Card imageSrc="/rkt.jpeg" title="John doe" description="AIR 1 ranker" 
+            <Card imageSrc="/sanskriti.png" title="Sanskriti Mishra" description="IIT Roorkee" 
                       // buttonText="Know More"
                     // onButtonClick={handleKnowMoreClick}
                   />
-            <Card imageSrc="/abhishek.jpeg" title="Name" description="AIR 1 ranker" 
+            <Card imageSrc="/manas.jpeg" title="Manas Agarwal" description="IIT Delhi" 
                       // buttonText="Know More"
                     // onButtonClick={handleKnowMoreClick}
                   />
-            <Card imageSrc="/abhishek.jpeg" title="Name" description="AIR 1 ranker" 
+            <Card imageSrc="/ria.jpg" title="Riya Choudhary" description="SKMCH" 
                       // buttonText="Know More"
                     // onButtonClick={handleKnowMoreClick}
                   />
-            <Card imageSrc="/abhishek.jpeg" title="Name" description="AIR 1 ranker" 
+            <Card imageSrc="/alia.jpg" title="Aliya Hussain" description="..." 
                       // buttonText="Know More"
                     // onButtonClick={handleKnowMoreClick}
                   />

@@ -10,41 +10,83 @@ interface Testimonial {
   quote: string;
 }
 
-const testimonials: Testimonial[] = [
-  {
-    name: 'Aniket Agrawal',
-    image: '/neet.jpg', // Replace with the path to the image
-    rank: 'JEE Main & Advanced (AIR 34)',
-    quote: 'Genuinely, I would like to thank Omega for helping me crack JEE Advanced 2019. The guidance by all the teachers, the support of office staff and the study material, everything is just perfect to take you through JEE and other exams. Thank you Omega for making my career.',
-  },
+interface TestimonialProps {
+  slug: string;
+}
+
+const jeeTestimonials: Testimonial[] = [
   {
     name: 'Manas Agrawal',
     image: '/manas.jpeg', // Replace with the path to the image
-    rank: 'JEE Main & Advanced (AIR 34)',
+    rank: 'JEE Main & Advanced (IIT Delhi)',
     quote: 'I owe my JEE success to Omega Study Centre. The regular tests, doubt-clearing sessions, and motivational support kept me focused and confident throughout my journey.',
   },
   {
-    name: 'Manas Agrawal',
-    image: '/manas.jpeg', // Replace with the path to the image
-    rank: 'JEE Main & Advanced (AIR 34)',
+    name: 'Sanskriti Mishra',
+    image: '/sanskriti.png', // Replace with the path to the image
+    rank: 'JEE Main & Advanced (IIT Roorkee)',
+    quote: 'I am very happy with the course. The faculty is well prepared and the study material is very helpful. I would recommend Omega to anyone who is looking for a well-prepared course.',
+  },
+  {
+    name: 'Himanshu Kumar',
+    image: '/himanshu.jpg', // Replace with the path to the image
+    rank: 'JEE Main & Advanced (IIT Kharaghpur)',
     quote: "Omega Study Centre transformed my JEE preparation. The faculty's dedication and the structured curriculum helped me secure a top rank. Highly recommended for serious aspirants!",
   },
   {
-    name: 'Aniket Agrawal',
-    image: '/neet.jpg', // Replace with the path to the image
-    rank: 'JEE Main & Advanced (AIR 34)',
+    name: 'Amar Ranjan',
+    image: '/amar.jpg', // Replace with the path to the image
+    rank: 'JEE Main & Advanced (IIT Bhu)',
     quote: 'Joining Omega Study Centre was the best decision for my JEE preparation. The experienced teachers and their unique teaching methods ensured I was well-prepared for every challenge.',
   },
+  
   // Add more testimonials as needed
 ];
 
-const TestCarousel: React.FC = () => {
+const neetTestimonials : Testimonial[] = [
+  {
+    name: 'Aliya Hussain',
+    image: '/alia.jpg', // Replace with the path to the image
+    rank: 'NEET (...)',
+    quote: 'Omega Study Centre was instrumental in my NEET success. The expert faculty and comprehensive study materials provided me with the knowledge and confidence to excel in my exams',
+  },
+  {
+    name: 'Riya Choudhary',
+    image: '/ria.jpg', // Replace with the path to the image
+    rank: 'NEET (SKMCH)',
+    quote: "With Omega Study Centre's guidance, I achieved a top rank in NEET. The personalized coaching and focused preparation strategies made all the difference in my journey.",
+  } ,
+  {
+    name: 'Sakshi Kumari',
+    image: '/sakshi.jpg', // Replace with the path to the image
+    rank: 'NEET (DMCH)',
+    quote: 'The structured approach and regular practice tests at Omega Study Centre helped me secure a great NEET rank. Their commitment to student success is truly commendable',
+  },
+  {
+    name: "Megha ",
+    image: '/megha.jpg', // Replace with the path to the image
+    rank: 'NEET (SKMCH)',
+    quote: 'Thanks to Omega Study Centre, I was able to realize my dream of entering a top medical college. The supportive environment and expert mentorship were key to my achievement',
+  }
+]
+
+const foundationTestimonials : Testimonial[] = []
+
+const TestCarousel: React.FC<TestimonialProps> = ({slug }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
+  let testimonials: Testimonial[] = [];
+  if(slug==="iit-jee"){
+    testimonials = jeeTestimonials;
+  }else if(slug==="neet") {
+    testimonials = neetTestimonials;
+  }else {
+    testimonials = foundationTestimonials;
+  }
 
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentIndex((prevIndex) => (prevIndex === testimonials.length - 1 ? 0 : prevIndex + 1));
-    }, 3000); // Change slide every 3 seconds
+    }, 4000); // Change slide every 3 seconds
 
     return () => clearInterval(interval);
   }, []);

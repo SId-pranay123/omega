@@ -19,7 +19,7 @@ export default function Page({ params }: { params: { slug: string } }) {
     const neetHighlights: string[] = [`Structured Academic Planner for ${(params.slug).toUpperCase()} ${currentYear}.`, "Printed Study Material & Daily Practice Sheets.", "One on One doubt solving support & Regular Test facility.", "Complete Syllabus Coverage."]
     return (
         <>
-        <Frontview />
+        <Frontview slug={params.slug}/>
     <div className="m-14">
 
             <div className="bg-[#FEFAF3] px-12 py-8 rounded-3xl">
@@ -35,7 +35,7 @@ export default function Page({ params }: { params: { slug: string } }) {
                     <CourseFee />
                 </section>
                 <section id="section4" className="pt-10">
-                    <TestCarousel />
+                    <TestCarousel slug={params.slug}/>
                 </section>
             </div>
 

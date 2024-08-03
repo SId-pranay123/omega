@@ -10,7 +10,7 @@ interface StatCardProps {
 
 const StatCard: React.FC<StatCardProps> = ({ icon, value, label }) => (
   <div className="flex flex-col items-center p-4">
-    <div className="text-purple-600 text-4xl mb-2">{icon}</div>
+    <div className="text-[#9f4648] text-4xl mb-2">{icon}</div>
     <div className="text-2xl font-bold text-gray-900">{value}</div>
     <div className="text-gray-600">{label}</div>
   </div>

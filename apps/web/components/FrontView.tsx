@@ -1,5 +1,5 @@
 'use client'
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 
 interface FrontviewProps {
   jee: string;
@@ -7,6 +7,7 @@ interface FrontviewProps {
   batch: string;
   classInfo: string;
 }
+
 
 const Frontview1: React.FC<FrontviewProps> = ({ jee, nurture, batch, classInfo }) => {
   const [formData, setFormData] = useState({
@@ -121,15 +122,27 @@ const Frontview1: React.FC<FrontviewProps> = ({ jee, nurture, batch, classInfo }
   );
 };
 
+interface FrontProps {
+  slug: string;
+}
+
 // Sample usage
-const Frontview: React.FC = () => {
+const Frontview: React.FC<FrontProps> = ({slug}) => {
+  
   return (
-    <Frontview1 
-      jee="JEE" 
-      nurture="NURTURE" 
-      batch="BATCH" 
-      classInfo="Class 10th to 11th Moving Students" 
-    />
+    <>
+      { slug === 'iit-jee' ? <Frontview1 
+        jee="JEE"
+        nurture="NURTURE + TARGET"
+        batch="BATCH"
+        classInfo="Class 10th to 11th Moving Students and 13th batch"   />:
+        <Frontview1 
+        jee="NEET"
+        nurture="NURTURE + TARGET"
+        batch="BATCH"
+        classInfo="Class 10th to 11th Moving Students and 13th batch"   />}
+      
+    </>
   );
 };
 export default Frontview;
