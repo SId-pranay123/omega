@@ -11,7 +11,7 @@ const Footer: React.FC = () => {
             </svg> */}
             <img src="/omega.png" alt="Logo" />
           </div>
-          <span className="ml-3 text-xl font-bold">Omega</span>
+          <span className="ml-3 text-xl text-white font-bold">Omega Study Center</span>
         </div>
         <div className="flex flex-col md:flex-row justify-between text-white w-full md:w-auto">
           <div className="mb-4 md:mb-0 md:mr-8">

@@ -15,16 +15,16 @@ const page = () => {
 
         <div className='grid lg:grid-cols-2 sm:grid-cols-1 px-10 pb-8'>
           <div className=' m-4 flex justify-center rounded-xl shadow-xl gap-4 items-center'>
-            <div className='w-[92%] h-[85%] bg-red-500 '>
-              <Image src={""} alt="logo" width={300} height={300} />
+            <div className='w-[92%] h-[85%] '>
+              <Image src={"/otse1.jpeg"} alt="logo" width={300} height={300} />
             </div>
           </div>
           <div className=' m-4 flex justify-center rounded-xl shadow-xl gap-4 items-center'>
-            <div className='w-[92%] h-[85%] bg-red-500 '>
-            <Image src={""} alt="logo" width={300} height={300} />
+            <div className='w-[92%] h-[85%] '>
+            <Image src={"/otse2.jpeg"} alt="logo" width={300} height={300}/>
             </div>
           </div>
-          <div className=' m-4 flex justify-center rounded-xl shadow-xl gap-4 items-center'>
+          {/* <div className=' m-4 flex justify-center rounded-xl shadow-xl gap-4 items-center'>
             <div className='w-[92%] h-[85%] bg-red-500 '>
               <Image src={""} alt="logo" width={300} height={300} />
             </div>
@@ -50,7 +50,7 @@ const page = () => {
             </div>
           </div>
           
-          
+           */}
         </div>
     </div>
   )

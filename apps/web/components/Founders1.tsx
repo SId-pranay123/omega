@@ -13,7 +13,7 @@ const App: React.FC = () => {
       experience: "",
     },
     {
-      imagePath:"./sumitsir.jpeg",
+      imagePath:"./sumitsir1.jpeg",
       founderName:"Sumit kumar Chaubey",
       degree: "",
       institution: "Mr. Sumit Kumar Chaubey is the Founder & Managing Director of Omega Study Centre, a premier institution for JEE & NEET preparation. He has been mentoring and guiding all the aspirants for more than 10 years.Over 10,000+ students have had their careers effectively influenced by his superb mentorship over the years, enabling them to matriculate into various IITs , Nits, Aiims & various respected medical colleges. This journey continues as a crusade. To sate his enthusiasm for making dreams of many come true, he spends as much time as possible with students. He feels that becoming a mentor is a lifelong goal for him, not just a job. He thinks that everyone can succeed in life if they are given the proper direction and advice to go in order to succeed in the cutthroat world.",

@@ -46,7 +46,7 @@ export default function Page(): JSX.Element {
                   />
             <Card imageSrc="/omega.png" title="Pre-Foundation" description={trimString(foundationDescription)}
                       buttonText="Know More"
-                    // onButtonClick={handleKnowMoreClick}
+                    onButtonClick={() => router.push("/courses/foundation")}
                   />
             {/* <Card imageSrc="/abhishek.jpeg" title="IIT-JEE" description="We offer the best online coaching for IIT-JEE exam preparation, making it an ideal choice for aspirants." 
                       buttonText="Know More"
