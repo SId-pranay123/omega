@@ -73,10 +73,20 @@ export default function Page(): JSX.Element {
                       // buttonText="Know More"
                     // onButtonClick={handleKnowMoreClick}
                   />
-            <Card imageSrc="/manas.jpeg" title="Manas Agarwal" description="IIT Delhi" 
+            <Card imageSrc="/manas_ranker.png" title="Manas Agarwal" description="IIT Delhi" 
                       // buttonText="Know More"
                     // onButtonClick={handleKnowMoreClick}
                   />
+            <Card imageSrc="/rkt_ranker.png" title="Rakesh Kumar Thakur" description="IIT Delhi" />
+            <Card imageSrc="/rajeev_ranker.png" title="Rajeev Ranjan" description="IIT Delhi" />
+            <Card imageSrc="/gopal_ranker.png" title="Gopal " description="IIT Delhi" />
+            <Card imageSrc="/muskan_ranker.png" title="Mushkan " description="IIT Delhi" />
+            <Card imageSrc="/navnnet_ranker.png" title="Navneet Raj" description="IIT Roorkee" />
+            <Card imageSrc="/pankaj_ranker.png" title="Pankaj Kumar" description="IIT Roorkee" />
+            <Card imageSrc="/sonu_ranker.png" title="Sonu Kumar jha" description="IIT Roorkee" />
+            <Card imageSrc="/ritik_ranker.png" title="Ritik Jha" description="IIT Roorkee" />
+
+
             <Card imageSrc="/ria.jpg" title="Riya Choudhary" description="SKMCH" 
                       // buttonText="Know More"
                     // onButtonClick={handleKnowMoreClick}
