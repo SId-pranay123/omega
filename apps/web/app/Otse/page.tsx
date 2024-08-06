@@ -82,6 +82,11 @@ const page = () => {
               <img src="/otse2.jpeg" alt="logo" className='p-4 w-full h-full object-cover rounded-xl'/>
             </div>
           </div>
+          <div className='m-4 rounded-xl shadow-xl'>
+            <div className='w-full h-full relative rounded-xl overflow-hidden'>
+              <img src="/otse3.jpeg" alt="logo" className='p-4 w-full h-full object-cover rounded-xl'/>
+            </div>
+          </div>
         </div>
     </div>
   );
