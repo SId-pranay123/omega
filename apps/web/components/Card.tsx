@@ -83,7 +83,7 @@
 
 import Image from 'next/image';
 
-interface CardProps {
+export interface CardProps {
     imageSrc: string;
     title: string;
     description: string;

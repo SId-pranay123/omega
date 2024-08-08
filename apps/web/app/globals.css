@@ -1,3 +1,40 @@
+/* global.css */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.carousel-container {
+  width: 100%;
+  overflow-x: auto; /* Enables horizontal scrolling */
+  scroll-behavior: smooth;
+}
+
+.carousel {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.slide {
+  flex: 0 0 auto;
+  width: 100%; /* Full width to show only one card on small screens */
+  padding: 1rem;
+  box-sizing: border-box;
+}
+
+@media (min-width: 640px) { /* Tablet screens */
+  .slide {
+    width: 50%; /* Show 2 cards on tablet screens */
+  }
+}
+
+@media (min-width: 768px) { /* Small desktops */
+  .slide {
+    width: 33.333%; /* Show 3 cards on small desktop screens */
+  }
+}
+
+@media (min-width: 1024px) { /* Larger desktops */
+  .slide {
+    width: 25%; /* Show 4 cards on larger desktop screens */
+  }
+}

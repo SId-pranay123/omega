@@ -7,12 +7,117 @@ import Achievements from "../components/Acievements";
 import Founders1 from "../components/Founders1";
 import { useRouter } from "next/navigation";
 import ScrollableOptions from "../components/ScrollableOptions";
+import Section from "../components/RankerSection";
 
 const trimString = (str : string) => {
   return str.length > 80 ? str.slice(0, 80) + "..." : str
 }
 
 export default function Page(): JSX.Element {
+
+  const sections = [
+    {
+      title: 'IIT JEE',
+      items: [
+        {
+          imageSrc: '/sanskriti.png',
+          title: 'Sanskriti Mishra',
+          description: 'IIT Roorkee',
+          // buttonText: 'Buy Now',
+          // onButtonClick: () => alert('Product 1 purchased!')
+        },
+        {
+          imageSrc: '/manasresult.jpeg',
+          title: 'Manas Agarwal',
+          description: 'IIT Delhi',
+          // buttonText: 'Buy Now',
+          // onButtonClick: () => alert('Product 1 purchased!')
+        },
+        {
+          imageSrc: '/sonu_ranker.png',
+          title: 'Sonu Kumar Jha',
+          description: 'IIT Roorkee',
+          // buttonText: 'Buy Now',
+          // onButtonClick: () => alert('Product 1 purchased!')
+        },{
+          imageSrc: '/muskan_ranker.png',
+          title: 'Mushkan',
+          description: 'IIT Delhi',
+          // buttonText: 'Buy Now',
+          // onButtonClick: () => alert('Product 1 purchased!')
+        },{
+          imageSrc: '/rkt_ranker.png',
+          title: 'Rakesh Kumar Thakur',
+          description: 'IIT Delhi',
+          // buttonText: 'Buy Now',
+          // onButtonClick: () => alert('Product 1 purchased!')
+        },
+        {
+          imageSrc: '/rajeev_ranker.png',
+          title: 'Rajeev Ranjan',
+          description: 'IIT Delhi',
+          // buttonText: 'Buy Now',
+          // onButtonClick: () => alert('Product 1 purchased!')
+        },
+        {
+          imageSrc: '/navnnet_ranker.png',
+          title: 'Navneet Raj',
+          description: 'IIT Roorkee',
+          // buttonText: 'Buy Now',
+          // onButtonClick: () => alert('Product 1 purchased!')
+        },
+        {
+          imageSrc: '/aryan_ranker.png',
+          title: 'Aryan Kumar',
+          description: 'IIT Kharaghpur',
+          // buttonText: 'Buy Now',
+          // onButtonClick: () => alert('Product 1 purchased!')
+        },
+        {
+          imageSrc: '/himanshu_ranker.png',
+          title: 'Himanshu Jha',
+          description: 'IIT Kharaghpur',
+          // buttonText: 'Buy Now',
+          // onButtonClick: () => alert('Product 1 purchased!')
+        },
+
+      ],
+    },
+    {
+      title: 'NEET',
+      items: [
+        {
+          imageSrc: '/alia.jpg',
+          title: 'Aliya Hussain',
+          description: 'AIIMS',
+          // buttonText: 'Buy Now',
+          // onButtonClick: () => alert('Product 3 purchased!')
+        },
+        {
+          imageSrc: '/ria.jpg',
+          title: 'Riya Choudhary',
+          description: 'SKMCH',
+          // buttonText: 'Buy Now',
+          // onButtonClick: () => alert('Product 3 purchased!')
+        },
+        {
+          imageSrc: '/sakshi.jpg',
+          title: 'Sakshi Kumari',
+          description: 'DMCH',
+          // buttonText: 'Buy Now',
+          // onButtonClick: () => alert('Product 3 purchased!')
+        },
+        {
+          imageSrc: '/megha.jpg',
+          title: 'Megha Kumari',
+          description: 'SKMCH',
+          // buttonText: 'Buy Now',
+          // onButtonClick: () => alert('Product 3 purchased!')
+        },
+      ],
+    },
+    // Additional sections...
+  ];
 
   const router = useRouter();
   const iitDescription = "Our JEE (Mains + Advance)  courses are designed to help students achieve excellent results and high ranks in the Joint Entrance Examination. We focus on building a strong foundation of concepts and knowledge, ensuring that each student gains a better understanding of the subjects. With our expert faculty and comprehensive study materials, we guide students through a structured learning path that enhances their problem-solving skills and prepares them for success in the JEE exams along with boards."
@@ -60,22 +165,15 @@ export default function Page(): JSX.Element {
         <Stats />
 
         {/* // -----------------------------Top Rankers-------------------------------- */}
-        <div className="max-w-7xl mx-auto px-4 py-6 sm:px-6 lg:px-8">
+        {/* <div className="max-w-7xl mx-auto px-4 py-6 sm:px-6 lg:px-8">
           <div className="flex justify-center items-center py-6">
             <h1 className="text-3xl font-bold"> Top Rankers </h1>
           </div>
           <div className="grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 gap-6">
-            {/* <Card image="/omega.png" title="John doe" details="AIR 1 ranker" href="#"/>
-            <Card image="/omega.png" title="Jane Doe" details="AIR 2 ranker" href="#"/>
-            <Card image="/omega.png" title="SOme name" details="AIR 3 ranker" href="#"/>
-            <Card image="/omega.png" title="Another name" details="AIR 4 ranker" href="#"/> */}
             <Card imageSrc="/sanskriti.png" title="Sanskriti Mishra" description="IIT Roorkee" 
-                      // buttonText="Know More"
-                    // onButtonClick={handleKnowMoreClick}
                   />
             <Card imageSrc="/manas_ranker.png" title="Manas Agarwal" description="IIT Delhi" 
-                      // buttonText="Know More"
-                    // onButtonClick={handleKnowMoreClick}
+                  
                   />
             <Card imageSrc="/rkt_ranker.png" title="Rakesh Kumar Thakur" description="IIT Delhi" />
             <Card imageSrc="/rajeev_ranker.png" title="Rajeev Ranjan" description="IIT Delhi" />
@@ -85,19 +183,27 @@ export default function Page(): JSX.Element {
             <Card imageSrc="/pankaj_ranker.png" title="Pankaj Kumar" description="IIT Roorkee" />
             <Card imageSrc="/sonu_ranker.png" title="Sonu Kumar jha" description="IIT Roorkee" />
             <Card imageSrc="/ritik_ranker.png" title="Ritik Jha" description="IIT Roorkee" />
-
+            <Card imageSrc="/safi_ranker.png" title="Safi Azam" description="IIT Roorkee" />
+            <Card imageSrc="/ritik_ranker.png" title="Ritik Jha" description="IIT Roorkee" />
+            
 
             <Card imageSrc="/ria.jpg" title="Riya Choudhary" description="SKMCH" 
-                      // buttonText="Know More"
-                    // onButtonClick={handleKnowMoreClick}
+                  
                   />
             <Card imageSrc="/alia.jpg" title="Aliya Hussain" description="..." 
-                      // buttonText="Know More"
-                    // onButtonClick={handleKnowMoreClick}
+                     
                   />
             
           </div>
-        </div>
+        </div> */}
+
+
+    <div className="container mx-auto p-8 ">
+      {sections.map((section, index) => (
+        <Section key={index} {...section} />
+      ))}
+    </div>
+
 
         {/* // -----------------------------Our faculties-------------------------------- */}
         {/* <div className="max-w-7xl mx-auto px-4 py-6 sm:px-6 lg:px-8">
