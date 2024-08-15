@@ -163,6 +163,7 @@ export default function Page(): JSX.Element {
 
         <Achievements />
         <Stats />
+        
 
         {/* // -----------------------------Top Rankers-------------------------------- */}
         {/* <div className="max-w-7xl mx-auto px-4 py-6 sm:px-6 lg:px-8">

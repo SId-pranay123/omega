@@ -38,3 +38,9 @@
     width: 25%; /* Show 4 cards on larger desktop screens */
   }
 }
+
+@layer utilities{
+  .paused {
+    animation-play-state: paused;
+  }
+}

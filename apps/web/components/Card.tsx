@@ -89,11 +89,12 @@ export interface CardProps {
     description: string;
     buttonText?: string; // Optional button text
     onButtonClick?: () => void; // Optional button click handler
+    className?: string;
 }
 
-const Card: React.FC<CardProps> = ({ imageSrc, title, description, buttonText, onButtonClick }) => {
+const Card: React.FC<CardProps> = ({ imageSrc, title, description, buttonText, onButtonClick, className }) => {
     return (
-        <div className="bg-white rounded-lg overflow-hidden">
+        <div className={`bg-white rounded-lg overflow-hidden ${className? className : ''}`}>
             <div className="relative w-full h-48">
                 <Image
                     src={imageSrc}

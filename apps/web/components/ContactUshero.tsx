@@ -11,7 +11,7 @@ const ContactUshero: React.FC = () => {
 
   return (
     <div>
-      <div className="bg-[#aa8f26] text-white h-[650px] flex items-center justify-start p-4 pl-32">
+      <div className="bg-[#011926] text-white h-[650px] flex items-center justify-start p-4 pl-32">
         <div className="w-full max-w-lg">
           <div className="text-7xl font-bold mb-6">
             Contact <span className="text-yellow-400">Us</span>
@@ -30,5 +30,7 @@ const ContactUshero: React.FC = () => {
     </div>
   );
 }
+
+// bg-[#aa8f26]
 
 export default ContactUshero;
