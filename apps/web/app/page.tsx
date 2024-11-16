@@ -132,35 +132,32 @@ export default function Page(): JSX.Element {
 
         {/* -----------------------------Courses-------------------------------- */}
 
-        <div className="max-w-7xl mx-auto px-4 py-12 sm:px-6 lg:px-8">
+        <div className="max-w-7xl mx-auto px-4 py-12 sm:px-6 lg:px-8 flex flex-col items-center">
           <div className="flex justify-center items-center py-6">
-            <h1 className="text-3xl font-bold"> Courses</h1>
+            <h1 className="text-3xl font-bold">Courses</h1>
           </div>
-          <div className="grid lg:grid-cols-3 md:grid-cols-3 sm:grid-cols-2 gap-6" >
-            {/* <Card image="/abhishek.jpeg" title="IIT JEE" details="Best coaching in North Bihar" href="#"/>
-            <Card image="/neet.jpg" title="NEET" details="Best coaching in North Bihar" href="#"/>
-            <Card image="/omega.png" title="FOUNDATION" details="Best coaching in North Bihar" href="#"/>
-            <Card image="/omega.png" title="Class 6-10" details="Best coaching in North Bihar" href="#"/> */}
-
-            <CourseCard title="JEE(Mains + Advance)" description={trimString(iitDescription)} 
-                      buttonText="Know More"
-                    onButtonClick={() => router.push("/courses/iit-jee")}
-                  />
-            <CourseCard title="NEET" description={trimString(neetDescription)}
-                      buttonText="Know More"
-                    onButtonClick={() => router.push("/courses/neet")}
-                  />
-            <CourseCard title="Pre-Foundation" description={trimString(foundationDescription)}
-                      buttonText="Know More"
-                    onButtonClick={() => router.push("/courses/foundation")}
-                  />
-            {/* <Card imageSrc="/abhishek.jpeg" title="IIT-JEE" description="We offer the best online coaching for IIT-JEE exam preparation, making it an ideal choice for aspirants." 
-                      buttonText="Know More"
-                    // onButtonClick={handleKnowMoreClick}
-                  /> */}
-            
+          <div className="grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-6 justify-items-center w-full">
+            <CourseCard 
+              title="JEE(Mains + Advance)" 
+              description={trimString(iitDescription)} 
+              buttonText="Know More"
+              onButtonClick={() => router.push("/courses/iit-jee")}
+            />
+            <CourseCard 
+              title="NEET" 
+              description={trimString(neetDescription)}
+              buttonText="Know More"
+              onButtonClick={() => router.push("/courses/neet")}
+            />
+            <CourseCard 
+              title="Pre-Foundation" 
+              description={trimString(foundationDescription)}
+              buttonText="Know More"
+              onButtonClick={() => router.push("/courses/foundation")}
+            />
           </div>
         </div>
+
 
         <Achievements />
         <Stats />
