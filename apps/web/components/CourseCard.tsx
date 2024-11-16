@@ -23,11 +23,13 @@ const CourseCard: React.FC<CardProps> = ({ title, description, buttonText, onBut
             <div className="flex justify-center mt-6">
                 <button
                     onClick={onButtonClick}
-                    className="bg-[#D82025] text-white px-4 py-2 rounded-full inline-flex items-center"
+                    className="bg-[#D82025] text-white px-4 py-2 rounded-full inline-flex items-center
+                             hover:bg-[#B31B1F] transform hover:scale-105 transition-all duration-200
+                             active:scale-95 focus:outline-none focus:ring-2 focus:ring-[#D82025] focus:ring-opacity-50"
                 >
                     {buttonText}
                     <svg 
-                        className="w-3.5 h-3.5 ml-2 rtl:rotate-180" 
+                        className="w-3.5 h-3.5 ml-2 rtl:rotate-180 transition-transform duration-200 group-hover:translate-x-1" 
                         aria-hidden="true" 
                         xmlns="http://www.w3.org/2000/svg" 
                         fill="none" 
