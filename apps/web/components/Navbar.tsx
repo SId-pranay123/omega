@@ -320,7 +320,7 @@ const NavBar: React.FC = () => {
             { name: 'Pre-medical', path: '/classroom/pre-medical' },
             { name: 'Pre-board', path: '/classroom/pre-board' },
           ])}
-          {renderMenuItem('OTSE', '/otse')}
+          {renderMenuItem('OTSE', '/Otse')}
           {renderDropdownItem('Student zone', [
             { name: 'Periodic test', path: '/student-zone/periodic-test' },
             { name: 'Online test', path: '/student-zone/online-test' },
