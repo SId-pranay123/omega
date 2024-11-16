@@ -8,6 +8,7 @@ import Founders1 from "../components/Founders1";
 import { useRouter } from "next/navigation";
 import ScrollableOptions from "../components/ScrollableOptions";
 import Section from "../components/RankerSection";
+import CourseCard from "../components/CourseCard";
 
 const trimString = (str : string) => {
   return str.length > 80 ? str.slice(0, 80) + "..." : str
@@ -135,21 +136,21 @@ export default function Page(): JSX.Element {
           <div className="flex justify-center items-center py-6">
             <h1 className="text-3xl font-bold"> Courses</h1>
           </div>
-          <div className="grid lg:grid-cols-3 md:grid-cols-3 sm:grid-cols-2 gap-6">
+          <div className="grid lg:grid-cols-3 md:grid-cols-3 sm:grid-cols-2 gap-6" >
             {/* <Card image="/abhishek.jpeg" title="IIT JEE" details="Best coaching in North Bihar" href="#"/>
             <Card image="/neet.jpg" title="NEET" details="Best coaching in North Bihar" href="#"/>
             <Card image="/omega.png" title="FOUNDATION" details="Best coaching in North Bihar" href="#"/>
             <Card image="/omega.png" title="Class 6-10" details="Best coaching in North Bihar" href="#"/> */}
 
-            <Card imageSrc="/abhishek.jpeg" title="JEE(Mains + Advance)" description={trimString(iitDescription)} 
+            <CourseCard title="JEE(Mains + Advance)" description={trimString(iitDescription)} 
                       buttonText="Know More"
                     onButtonClick={() => router.push("/courses/iit-jee")}
                   />
-            <Card imageSrc="/neet.jpg" title="NEET" description={trimString(neetDescription)}
+            <CourseCard title="NEET" description={trimString(neetDescription)}
                       buttonText="Know More"
                     onButtonClick={() => router.push("/courses/neet")}
                   />
-            <Card imageSrc="/omega.png" title="Pre-Foundation" description={trimString(foundationDescription)}
+            <CourseCard title="Pre-Foundation" description={trimString(foundationDescription)}
                       buttonText="Know More"
                     onButtonClick={() => router.push("/courses/foundation")}
                   />
