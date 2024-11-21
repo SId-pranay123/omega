@@ -39,7 +39,7 @@ const Hero = () => {
                     containerClass="carousel-container"
                 >
                     <div className="relative w-full">
-                        <div className="h-[400px] sm:h-[450px] md:h-[550px] lg:h-[600px] xl:h-[700px] bg-[#560002]">
+                        <div className="h-[280px] sm:h-[450px] md:h-[550px] lg:h-[600px] xl:h-[700px] bg-[#560002]">
                             <div className="relative w-full h-full">
                                 <Image 
                                     src="/Banner.jpg"
