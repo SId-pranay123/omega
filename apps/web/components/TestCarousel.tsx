@@ -19,25 +19,25 @@ const jeeTestimonials: Testimonial[] = [
     name: 'Manas Agrawal',
     image: '/manas.jpeg',
     rank: 'JEE Main & Advanced (IIT Delhi)',
-    quote: 'I owe my JEE success to Omega Study Centre. The regular tests, doubt-clearing sessions, and motivational support kept me focused and confident throughout my journey.',
+    quote: 'I owe my JEE success to Omega Study Centre. The regular tests, doubt-clearing sessions, and motivational support kept me focused and confident.',
   },
   {
     name: 'Sanskriti Mishra',
     image: '/sanskriti.png',
     rank: 'JEE Main & Advanced (IIT Roorkee)',
-    quote: 'I am very happy with the course. The faculty is well prepared and the study material is very helpful. I would recommend Omega to anyone who is looking for a well-prepared course.',
+    quote: 'The faculty is well-prepared, and the study material is very helpful. Omega is ideal for anyone seeking a structured course.',
   },
   {
     name: 'Himanshu Kumar',
     image: '/himanshu.jpg',
     rank: 'JEE Main & Advanced (IIT Kharaghpur)',
-    quote: "Omega Study Centre transformed my JEE preparation. The faculty's dedication and the structured curriculum helped me secure a top rank. Highly recommended for serious aspirants!",
+    quote: 'Omega Study Centre transformed my preparation. Their dedication and structured curriculum helped me secure a top rank.',
   },
   {
     name: 'Amar Ranjan',
     image: '/amar.jpg',
-    rank: 'JEE Main & Advanced (IIT Bhu)',
-    quote: 'Joining Omega Study Centre was the best decision for my JEE preparation. The experienced teachers and their unique teaching methods ensured I was well-prepared for every challenge.',
+    rank: 'JEE Main & Advanced (IIT BHU)',
+    quote: 'The experienced teachers and unique methods ensured I was well-prepared for every challenge. Highly recommend Omega.',
   },
 ];
 
@@ -73,6 +73,7 @@ const foundationTestimonials: Testimonial[] = [];
 const TestCarousel: React.FC<TestimonialProps> = ({ slug }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
   let testimonials: Testimonial[] = [];
+
   if (slug === 'iit-jee') {
     testimonials = jeeTestimonials;
   } else if (slug === 'neet') {
@@ -90,7 +91,7 @@ const TestCarousel: React.FC<TestimonialProps> = ({ slug }) => {
   }, [testimonials.length]);
 
   return (
-    <div className="flex flex-col items-center justify-center py-16 bg-[#FEFAF3] px-4 sm:px-8 lg:px-16">
+    <div className="flex flex-col items-center justify-center py-12 bg-[#FEFAF3] px-4 sm:px-8 lg:px-16">
       <div className="relative w-full max-w-4xl overflow-hidden">
         <div
           className="flex transition-transform duration-500"
@@ -99,19 +100,19 @@ const TestCarousel: React.FC<TestimonialProps> = ({ slug }) => {
           {testimonials.map((testimonial, index) => (
             <div
               key={index}
-              className="flex-shrink-0 w-full p-6 sm:p-8 md:p-12 rounded-lg text-center"
+              className="flex-shrink-0 w-full p-4 sm:p-6 md:p-8 rounded-lg text-center"
             >
-              <h2 className="text-2xl font-bold mb-4 whitespace-pre-line">
-                Reason Why Students Love and{'\n'}Prefer Omega
+              <h2 className="text-lg sm:text-xl font-bold mb-2">
+                Reason Why Students Love and Prefer Omega
               </h2>
               <img
                 src={testimonial.image}
                 alt={testimonial.name}
-                className="w-24 h-24 sm:w-28 sm:h-28 md:w-32 md:h-32 rounded-full mx-auto mb-4 object-cover"
+                className="w-20 h-20 sm:w-24 sm:h-24 md:w-28 md:h-28 rounded-full mx-auto mb-3 object-cover"
               />
-              <h3 className="text-lg sm:text-xl font-semibold">{testimonial.name}</h3>
-              <p className="text-sm sm:text-base text-gray-600">{testimonial.rank}</p>
-              <p className="mt-4 text-sm sm:text-base text-gray-700">
+              <h3 className="text-base sm:text-lg font-semibold">{testimonial.name}</h3>
+              <p className="text-xs sm:text-sm text-gray-600">{testimonial.rank}</p>
+              <p className="mt-3 text-sm sm:text-base text-gray-700 leading-tight">
                 <FontAwesomeIcon icon={faQuoteLeft} className="text-red-500 mr-2" />
                 {testimonial.quote}
                 <FontAwesomeIcon icon={faQuoteRight} className="text-red-500 ml-2" />
