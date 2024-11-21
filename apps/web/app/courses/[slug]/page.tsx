@@ -31,20 +31,21 @@ export default function Page({ params }: { params: { slug: string } }) {
                 <section id="section2" className="pt-14">
                     <ResultDisplay image="/result.jpeg" title={`${(params.slug).toUpperCase()} `}/>  
                 </section>
-                <section id="section3" className="grid grid-cols-2 gap-2">
-                    {(params.slug).toUpperCase() === "IIT-JEE" ? 
-                    <>
-                        <CourseFee slug={params.slug} program="2 years Program" />
-                        <CourseFee slug ={params.slug} program="Target Batch"/>
-                    </>
-                    :
-                    <>
-                        <CourseFee slug={params.slug} program="2 years Program"/>
-                        <CourseFee slug ={params.slug} program="Target Batch"/>
-                    </> 
-                    }
-                   
-                </section>
+                <section id="section3" className="pt-14">
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+        {(params.slug).toUpperCase() === "IIT-JEE" ? 
+        <>
+            <CourseFee slug={params.slug} program="2 years Program" />
+            <CourseFee slug ={params.slug} program="Target Batch"/>
+        </>
+        :
+        <>
+            <CourseFee slug={params.slug} program="2 years Program"/>
+            <CourseFee slug ={params.slug} program="Target Batch"/>
+        </> 
+        }
+    </div>
+</section>
                 <section id="section4" className="pt-10">
                     <TestCarousel slug={params.slug}/>
                 </section>
