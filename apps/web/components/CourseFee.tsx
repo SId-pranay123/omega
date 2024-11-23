@@ -7,8 +7,8 @@ interface CourseFeeProps {
 
 const CourseFee: React.FC<CourseFeeProps> = ({ slug, program }) => {
   return (
-    <div className="flex flex-col items-center justify-center py-6 px-3">
-      <div className="text-center mb-4">
+    <div className="flex flex-col items-center justify-center py-6 px-1 sm:px-3 w-full">
+      <div className="text-center mb-4 w-full">
         <h1 className="text-sm sm:text-lg md:text-2xl font-semibold">
           {`Course Fee for ${slug.toUpperCase()} - ${program}`}
         </h1>
@@ -16,7 +16,7 @@ const CourseFee: React.FC<CourseFeeProps> = ({ slug, program }) => {
           Available in Classroom Mode
         </p>
       </div>
-      <div className="bg-white shadow-lg rounded-lg p-4 w-full max-w-xs sm:max-w-md md:max-w-lg">
+      <div className="bg-white shadow-lg rounded-lg p-4 w-[95%] sm:w-full sm:max-w-md md:max-w-lg">
         <div className="bg-red-600 text-white rounded-t-lg p-2">
           <h2 className="text-sm sm:text-lg font-semibold text-center">Classroom Program</h2>
         </div>
@@ -25,7 +25,7 @@ const CourseFee: React.FC<CourseFeeProps> = ({ slug, program }) => {
             CLASSROOM Mode is available for students who want to study at our offline center.
           </p>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-center font-semibold text-xs sm:text-sm md:text-base">
-            <div className="p-3 bg-orange-200 rounded-md">
+            <div className="p-3 bg-orange-200 rounded-md w-full">
               {program === "Target Batch" ? (
                 <>
                   <p>Admission + Kit Fee</p>
@@ -38,7 +38,7 @@ const CourseFee: React.FC<CourseFeeProps> = ({ slug, program }) => {
                 </>
               )}
             </div>
-            <div className="p-3 bg-orange-200 rounded-md">
+            <div className="p-3 bg-orange-200 rounded-md w-full">
               {program === "Target Batch" ? (
                 <>
                   <p>Tuition Fee</p>
@@ -53,7 +53,7 @@ const CourseFee: React.FC<CourseFeeProps> = ({ slug, program }) => {
             </div>
           </div>
           <div className="flex justify-center mt-4">
-            <button className="bg-red-600 text-white py-1 px-4 rounded-md hover:bg-red-700 transition text-xs sm:text-sm md:text-base">
+            <button className="bg-red-600 text-white py-1 px-4 rounded-md hover:bg-red-700 transition text-xs sm:text-sm md:text-base w-full sm:w-auto">
               Pay Now
             </button>
           </div>
