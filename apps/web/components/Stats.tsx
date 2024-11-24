@@ -121,25 +121,25 @@ const Stats: React.FC = () => {
             icon={<i className="fas fa-award"></i>}
             value={10}
             label="Years of Excellence"
-            animationDelay={0.1}
+            animationDelay={1}
           />
           <StatCard
             icon={<i className="fas fa-user-graduate"></i>}
             value="12000+"
             label="Satisfied Students"
-            animationDelay={0.2}
+            animationDelay={2}
           />
           <StatCard
             icon={<i className="fas fa-chalkboard-teacher"></i>}
             value="30+"
             label="Experienced Faculties"
-            animationDelay={0.3}
+            animationDelay={3}
           />
           <StatCard
             icon={<i className="fas fa-users"></i>}
             value="95%"
             label="Satisfied Parents"
-            animationDelay={0.4}
+            animationDelay={4}
           />
         </div>
       </div>
