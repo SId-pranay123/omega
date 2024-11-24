@@ -94,29 +94,30 @@ export interface CardProps {
 
 const Card: React.FC<CardProps> = ({ imageSrc, title, description, buttonText, onButtonClick, className }) => {
     return (
-        <div className={`bg-white rounded-lg overflow-hidden ${className? className : ''}`}>
-            <div className="relative w-full h-48">
-                <Image
-                    src={imageSrc}
-                    alt={title}
-                    layout="fill"
-                    objectFit="cover" // Ensures the image covers the area without stretching
-                    className="rounded-full"
-                />
-            </div>
-            <div className="p-4 flex flex-col items-center justify-center">
-                <h3 className="text-lg text-center font-bold mb-2">{title}</h3>
-                <p className="text-gray-700 text-center mb-4">{description}</p>
-                {buttonText && (
-                    <button
-                        onClick={onButtonClick}
-                        className="bg-[#D82025] text-white px-4 py-2 rounded-full"
-                    >
-                        {buttonText}
-                    </button>
-                )}
-            </div>
+        <div className={`bg-white rounded-lg overflow-hidden ${className ? className : ''} shadow-lg`}>
+        {/* Circular Image */}
+        <div className="relative mx-auto mt-4" style={{ height: '200px', width: '200px' }}>
+            <Image
+                src={imageSrc}
+                alt={title}
+                layout="fill"
+                objectFit="cover" // Ensures the image maintains aspect ratio while filling the container
+                style={{borderRadius:'100%'}}
+            />
         </div>
+        <div className="p-4 flex flex-col items-center justify-center">
+            <h3 className="text-lg text-center font-bold mb-2">{title}</h3>
+            <p className="text-gray-700 text-center mb-4">{description}</p>
+            {buttonText && (
+                <button
+                    onClick={onButtonClick}
+                    className="bg-[#D82025] text-white px-4 py-2 rounded-full hover:bg-[#a8161d] transition-colors duration-300"
+                >
+                    {buttonText}
+                </button>
+            )}
+        </div>
+    </div>
     );
 };
 

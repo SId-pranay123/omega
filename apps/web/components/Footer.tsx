@@ -9,7 +9,7 @@ const Footer: React.FC = () => {
             {/* <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5.121 18.364A9 9 0 1118.364 5.121 9 9 0 015.121 18.364z"></path>
             </svg> */}
-            <img src="/omega.png" alt="Logo" />
+            <img src="/omega-logo.png" alt="Logo" />
           </div>
           <span className="ml-3 text-xl text-white font-bold">Omega Study Center</span>
         </div>
