@@ -6,17 +6,17 @@ const App: React.FC = () => {
   // Array of founder objects
   const foundersData = [
     {
-      imagePath:"./sumansir.jpg",
+      imagePath:"./cofounder1.jpg",
       founderName:"Suman Kumar Thakur",
       degree: "",
-      institution: " Mr. Suman Kumar Thakur  is the Founder & Director of Omega Study Centre, a premier institution for JEE & NEET preparation. He has been mentoring and guiding all the aspirants for more than 10 years.Over 10,000+ students have had their careers effectively influenced by his excellent guidance over the years, enabling them to matriculate into various IITs , Nits, Aiims & various respected medical colleges. He thinks that everyone can succeed in life if they are given the proper direction and advice to go in order to succeed in the cutthroat world. Driven by his passion for education, Mr. Suman spends significant time with his students, ensuring they receive the proper direction and support needed to succeed. He views mentoring as a lifelong mission, believing that every student can achieve greatness with the right guidance in this competitive world.",
+      institution: "Mr. Suman Kumar Thakur, the Founder and Director of Omega Study Centre, is a distinguished leader in JEE and NEET preparation. With over a decade of experience, he has mentored and guided thousands of aspirants, profoundly shaping the careers of more than 10,000 students who have gone on to secure admissions in IITs, NITs, AIIMS, and other prestigious medical institutions.He firmly believes that with the right guidance and direction, anyone can excel in the competitive world. Driven by his unwavering passion for education, Mr. Suman dedicates substantial time to his students, providing them with the support and mentorship needed to achieve their goals. He sees mentoring as a lifelong mission, empowering every student to realize their potential and achieve greatness.",
       experience: "",
     },
     {
-      imagePath:"./sumitsir1.jpeg",
+      imagePath:"./cofounder.jpg",
       founderName:"Sumit kumar Chaubey",
       degree: "",
-      institution: "Mr. Sumit Kumar Chaubey is the Founder & Managing Director of Omega Study Centre, a premier institution for JEE & NEET preparation. He has been mentoring and guiding all the aspirants for more than 10 years.Over 10,000+ students have had their careers effectively influenced by his superb mentorship over the years, enabling them to matriculate into various IITs , Nits, Aiims & various respected medical colleges. This journey continues as a crusade. To sate his enthusiasm for making dreams of many come true, he spends as much time as possible with students. He feels that becoming a mentor is a lifelong goal for him, not just a job. He thinks that everyone can succeed in life if they are given the proper direction and advice to go in order to succeed in the cutthroat world.",
+      institution: "Mr. Sumit Kumar Chaubey, the Founder and Managing Director of Omega Study Centre, has established a leading institution for JEE and NEET preparation. With over a decade of experience, he has guided and mentored countless aspirants, transforming the careers of more than 10,000 students who have secured admissions in IITs, NITs, AIIMS, and other esteemed medical colleges.Driven by his passion for helping students realize their dreams, Mr. Chaubey dedicates significant time to his students, ensuring they receive the guidance and support needed to excel. For him, mentorship is not merely a profession but a lifelong mission. He firmly believes that with the right direction and advice, every individual has the potential to thrive in the competitive world. His journey is a continuing crusade to inspire and empower future achievers.",
       experience: "",
     },
     // Add more founder objects as needed
