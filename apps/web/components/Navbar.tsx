@@ -174,13 +174,33 @@
 
 'use client';
 
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { usePathname } from 'next/navigation';
 
 const NavBar: React.FC = () => {
   const pathname = usePathname();
   const [menuOpen, setMenuOpen] = useState<boolean>(false);
   const [activeDropdown, setActiveDropdown] = useState<string | null>(null);
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      // Check if the page is scrolled down
+      if (window.scrollY > 0) {
+        setIsScrolled(true);
+      } else {
+        setIsScrolled(false);
+      }
+    };
+
+    // Attach the scroll event listener
+    window.addEventListener('scroll', handleScroll);
+
+    // Cleanup the event listener on component unmount
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
 
   const colorMap: { [key: string]: { bg: string; text: string } } = {
     '/': { bg: 'bg-[#560002]', text: 'text-white' },
@@ -280,12 +300,14 @@ const NavBar: React.FC = () => {
     >
       <div className="flex flex-col max-w-screen-xl px-4 mx-auto md:items-center md:justify-between md:flex-row md:px-6 lg:px-8">
         <div className="p-4 flex flex-row items-center justify-between w-full md:w-auto">
-          <a
-            href="/"
-            className="flex items-center text-lg font-semibold tracking-widest uppercase rounded-lg focus:outline-none focus:shadow-outline"
-          >
-            <img src="/omega.png" alt="Logo" className="h-8 mr-2" />
-            <span>Omega Study Center</span>
+        <a
+        href="/"
+        className={`flex items-center text-lg font-semibold tracking-widest uppercase rounded-lg focus:outline-none focus:shadow-outline transition-opacity duration-300 ${
+          isScrolled ? 'opacity-100' : 'opacity-0 pointer-events-none'
+        }`}
+      >
+            <img src="/omega-logo.png" alt="Logo" className="h-8 mr-2" />
+            <span>Omega Study Centre</span>
           </a>
           <button
             className="md:hidden rounded-lg focus:outline-none focus:shadow-outline"
