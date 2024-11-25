@@ -338,18 +338,15 @@ const NavBar: React.FC = () => {
           {renderMenuItem('Home', '/')}
           {renderMenuItem('Why Omega', '/why-omega')}
           {renderDropdownItem('Classroom', [
-            { name: 'Pre-engineering', path: '/classroom/pre-engineering' },
-            { name: 'Pre-medical', path: '/classroom/pre-medical' },
-            { name: 'Pre-board', path: '/classroom/pre-board' },
+            { name: 'Pre-engineering', path: '/courses/iit-jee' },
+            { name: 'Pre-medical', path: '/courses/neet' },
+            { name: 'Pre-board', path: '/courses/foundation' },
           ])}
           {renderMenuItem('OTSE', '/Otse')}
           {renderDropdownItem('Student zone', [
-            { name: 'Periodic test', path: '/student-zone/periodic-test' },
-            { name: 'Online test', path: '/student-zone/online-test' },
-            { name: 'Residential coaching', path: '/student-zone/residential-coaching' },
-            { name: 'Gallery', path: '/student-zone/gallery' },
-            { name: 'Enquiry for admission', path: '/student-zone/enquiry-for-admission' },
-            { name: 'Competitive exams', path: '/student-zone/competitive-exams' },
+            { name: 'JEE Test Series', path: '/student-zone/jee-test' },
+            { name: 'NEET Test Series', path: '/student-zone/neet-test' },
+            { name: 'Gallery', path: '/Gallery' },
           ])}
           {renderMenuItem('Contact', '/contact')}
         </nav>
